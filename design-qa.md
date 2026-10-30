@@ -1,74 +1,94 @@
-# 迹中局 Web prototype — design QA
+# 迹中局 · 连续地图改造 QA
 
 final result: passed
 
-## Scope and visual truth
+## 本轮范围与视觉依据
 
-User accepted the three generated art directions, then explicitly changed the product into a conventional shared platform with five navigation items and separate immersive stories. The implemented layout follows that accepted product change; this is not a pixel-for-pixel recreation of the original single-story landing mockups.
+用户明确要求用真实、可连续缩放与转向的全局地图替换静态微缩插画；国家 → 北京市（直辖市）→ 颐和园 → 园内景点。用户选择“浅色地形底图、墨绿水域、朱红探索线”，并要求定位、视角变化与更强交互。
 
-Source visual truth:
-- `/Users/xiaolin/.codex/generated_images/01a18bb6-049b-7b90-b043-51e6d01adac3/exec-2f3bdff1-10b1-4231-ad0d-fc44932fd497.png` — light forest-green platform and architectural miniature direction.
-- `/Users/xiaolin/.codex/generated_images/01a18bb6-049b-7b90-b043-51e6d01adac3/exec-f6900096-9357-4d65-a1cf-f7274922ce75.png` — cinematic lakeside story and ticket/letter direction.
-- Accepted product brief: map / story archives / adventure / collection / profile, selectable digital archives, full-browser story mode, Web first.
+参考图：
+- `/var/folders/j1/c0ny59n14c9_98dyf_rzf3380000gn/T/codex-clipboard-e43d48bc-984c-4dab-8833-87ba64f2a7f8.png`，旧版静态地图截图（2674 × 1848）。
+- `/var/folders/j1/c0ny59n14c9_98dyf_rzf3380000gn/T/codex-clipboard-37c07a83-b2b1-4bee-9657-1ca8b5623ec0.png`，团队矢量地图参考（3456 × 2234，包含浏览器栏）。
+- 读取用户指定团队仓库的 MapLibre / 公开数据技术路线。未复制该仓库代码、图标、照片或切片。
 
-## Captures and normalization
+本轮是按已确认方向重做地图，不要求复刻参考图的界面或城市范围。
 
-- Desktop CSS viewport: 1440 × 1024. Screenshot `qa/archive-desktop.png`: 1440 × 1131 (full page, content extends below viewport). `qa/story-opening.png`: 1440 × 1024. Browser-rendered, not inferred from code.
-- Mobile CSS viewport: 390 × 844. `qa/archive-mobile.png`: 390 × 844. Also inspected the mobile story and map in the actual browser.
-- No device frame; browser screenshots use 1 screenshot pixel per CSS pixel. Browser's display panel can scale the visible preview; captured image dimensions were checked separately.
-- Source and implementation were put together and opened as actual comparison boards: `qa/comparison-platform.png`, `qa/comparison-story.png`. Sources preserve their original aspect ratio; thumbnails fit within 720 × 700 for side-by-side art-direction comparison, without stretching.
-- Deliberate state/layout differences: original concept was a single-story entry; approved platform is an archive collection. Accordingly composition was reviewed against the revised brief rather than treating requested changes as fidelity regressions.
-- Focused comparison: live 1440 screenshots inspected full-size for archive typography, card controls, detail modal, chapter controls and button contrast; PNG output opened separately at native 900 × 1280. Smaller type and poster clipping could not be judged from overview boards alone.
+## 浏览器证据与视口
 
-## Required fidelity surfaces
+实际使用 Codex 内置浏览器检查，非仅以构建结果替代视觉验证。
 
-- Typography: system Chinese sans for UI and Songti serif for literary headings. Source family hierarchy retained. Primary explanatory text and answer options enlarged after first inspection; metadata remains secondary. Long titles wrap intentionally; orphaned map title fixed.
-- Spacing/layout: desktop 100px top nav, wide archive grid with asymmetric featured card, shared platform structure. Mobile uses a single-column archive and fixed five-item bottom navigation. No horizontal overflow at 1440 or 390 CSS pixels. Page and chapter scroll reset added.
-- Colors/tokens: pale green-white shared platform, forest-green controls, restrained cinnabar story CTA; separate dark story atmosphere. Corrected light-button hover to retain visible text contrast.
-- Imagery/assets: three separate generated raster assets, inspected and copied into `public/assets/`. Original UI mock screenshots are not used as flattened app surfaces. Map explicitly marked artistic and non-navigational. Phosphor library supplies UI icons.
-- Copy/content: five requested navigation labels, story previews vs active story clearly distinguished. Only one playable story; two planned stories marked as previews. AI hints are explicitly preset. Location/photo collection is labeled unverified. Fiction and non-historical content are clearly stated.
+- 桌面 CSS 视口与截图：1440 × 1024，截图 1 像素 = 1 CSS 像素。
+- 手机 CSS 视口与截图：390 × 844，同样无设备边框、无缩放拉伸。
+- `qa/map-before-redesign.png`：改造前的实际网页。
+- `qa/map-china-desktop.png`：全国地图与北京入口。
+- `qa/map-flight-mid.png`：连续飞行途经北京市层级，zoom 7.29，画布数量 1。
+- `qa/map-beijing.png`：北京市区域视野。
+- `qa/map-palace-desktop.png`：园区 zoom 15.15、pitch 53.9°，画布数量仍为 1。
+- `qa/map-china-mobile.png`：手机全国视野。
+- `qa/map-palace-mobile.png`：手机园区 zoom 14.35、pitch 46.4°，默认收起面板。
+- `qa/map-poi-mobile.png`：手机景点级视野（后续修正选点后面板滚动位置）。
+- `qa/map-comparison.png`：用户团队参考与实际实现并排，已打开检查。仅裁去参考图浏览器栏并等比例缩放；地图区域、功能与主题为本轮明确要求的改造，未据此声称像素级复刻。
 
-## Interaction checks performed in actual browser
+内置浏览器的原生窗口截图在调整视口后可能临时显示缩放后的窗口内容，因此最终证据使用 `tab.screenshot` 的 CSS 视口截图，分别核对实际宽高。
 
-- All five navigation destinations, including unstarted adventure and unlocked collection.
-- Story filter, search no-results state, restore all stories.
-- Bookmark story, verify it appears in profile, remove bookmark.
-- Open story detail, choose preview or field capture mode, close modal.
-- Preview: enter story → open letter → first act.
-- Wrong answer feedback, first-tier hint, correct answer and evidence collection.
-- Choose breakfast branch, pause, reload page, resume same chapter/branch.
-- Complete breakfast branch, third act, collect all three pieces.
-- Click three map fragments; final reveal stays disabled until all three placed; ending opens after completion.
-- Generate PNG, inspect poster layout, inspect download filename and full image data. Decoded sample is `qa/sample-poster.png` (900 × 1280).
-- Open profile after ending, verify completion record and counts.
-- Mobile archive, detail and field-capture layout; no horizontal overflow (document and immersive container both 390 CSS px).
-- Assets loaded successfully; final browser warning/error logs empty.
-- Agent-generated test progress cleared through product confirmation UI; user preview left in fresh archive state.
+## 交互验证
 
-## Comparison history / fixes
+1. 全国到北京：点击“飞往北京”，zoom 从 3.x 连续变化到 9.1，没有换页或更换地图画布。
+2. 一镜入园：实际捕捉中间北京市层级，随后到颐和园 zoom 15.15、pitch 53.9°；中间与结尾均只有 1 个 canvas。
+3. 景点选择：佛香阁列表可用，手机镜头最终到 zoom 17.15，而非仅更换卡片文案。
+4. 俯视切换：实际确认 pitch 到 0°，再经中间 9.3° 平滑返回立体视角。
+5. 园内巡游：可开始，显示当前景点，可立即结束；停止后巡游提示移除。
+6. 自动环绕：可开启/停止，实际罗盘 transform 随镜头改变（记录到 -41.702deg）。
+7. 原生放大/缩小：zoom 从 15.15 到 16.15，再返回；不是图片缩放模拟。
+8. 原生平移：在地图画布按 ArrowRight，界面中心坐标从约 116.270°E / 39.995°N 变到 116.273°E / 39.996°N。
+9. 说明入口：地图玩法与地图来源均可打开；地图说明支持 Escape 与焦点返回。
+10. 手机：五导航保持可操作，面板可展开/收起、坐标标签向内避让，无文档横向溢出。
+11. 页面回归：导航进入故事档案，原档案标题和故事卡片仍显示；回到地图重新挂载后画布数量为 1。
+12. 地图版权可见，手机端移到顶部操作区下方，避免被底部探索面板覆盖。
 
-1. [P2] Poster hero draw exceeded its image area, covering the brand line. Fixed canvas clipping to exactly 900 × 520; regenerated and opened `qa/sample-poster.png`, verified clean text/image separation. Evidence: `qa/poster-fixed.png` and native sample.
-2. [P2] Map description left a single trailing Chinese character on a third line. Rephrased to “一张戏票，走进老北京。” and reduced map title font. Rechecked desktop and mobile map.
-3. [P2] Light buttons inherited dark hover background with dark text. Added explicit light-button and puzzle-button hover colors; rechecked current assets and styles.
-4. [P2] Navigation/next chapter could preserve a prior scroll offset. Added page/chapter scroll reset, rechecked mobile navigation.
-5. [P2] Mobile hidden return label left an unnamed story back button. Added persistent accessible aria-label, verified locator can operate it.
-6. [P2] Underlying platform remained in the accessibility tree during modals. Added inert to platform header/main while overlays are active; final dialog snapshots show the active modal content.
-7. Improved fragment tray with actual city-image crops and snap animation; kept click alternative for keyboard/mobile users.
+定位：已实现原生 Geolocation 请求、已有权限时自动定位、精度圈、附近点计算、拒绝/超时/非安全环境等提示。本轮没有代用户授予位置权限，也没有获取真实精确位置；实际手机成功授权流程仍待用户设备确认。未把未经验证的定位能力计作已完成的实地打卡。
 
-## Remaining limits / P3 follow-ups
+## 必查视觉面
 
-- Real GPS permission granting and native photo chooser were not exercised; no private location was requested during testing. Their UI is implemented but end-to-end device validation remains outstanding.
-- Drag/drop pointer gesture not exercised; accessible click path tested to completion.
-- This is a frontend prototype, not a production location game. AI, exact navigation SDK, identity, cross-device sync, source-verified cultural knowledge and WeChat mini-program remain future work.
-- Original concept's miniature terrain separation is represented in the image language and piece tray; advanced 3D terrain assembly is not implemented.
-- Decorative brand mark uses system Chinese typography; final brand lettering can be customized later.
+- 字体：保留通用平台的中文宋体标题与系统无衬线 UI；地图标注使用地图字形与本地 CJK 字体。修正长标题的孤字换行，手机保留有意义的两行标题。
+- 间距与布局：全屏内容区地图，轻量浮层；桌面左侧探索面板，手机默认收起。相机 padding 与面板状态联动，使目标保持在可见区。
+- 色彩：浅地形与地物、墨绿水系、朱红点位/关联线。水域颜色与真实几何数据绑定，未用手绘背景冒充地图。
+- 影像/图形：实际矢量图层和 WebGL 建筑挤出；无微缩插画替代真实地理。地图 UI 使用 Phosphor，保留源图层地图图标。
+- 文案：北京市明确为直辖市；附近/区域视野不错误声称定位成功；虚线标示为线索关联而非步行导航；坐标/建筑高度来源与边界可查看。
 
-## Implementation checklist
+## 修正与复查历史
 
-- [x] Requested five-page platform and distinct story mode.
-- [x] Generated image assets present with provenance.
-- [x] Core preview complete through final reveal and PNG output.
-- [x] Browser progress recovery and accurate demo labels.
-- [x] Desktop/mobile browser inspection, fixes and post-fix evidence.
-- [x] Production build succeeds.
-- [ ] Real-world route/permissions/photo validation and backend integrations (outside this frontend delivery).
+- [P2] 长标题产生孤字换行：缩短标题，并检查桌面/手机画面。
+- [P2] 手机全国视野过窄、面板遮挡地图：加入手机相机范围与默认收起面板，重新截图确认。
+- [P2] 手机北京标签越界：以真实坐标点为锚，标签根据屏幕边缘向内展开；完整重载确认标记使用 center anchor 与 label-left。
+- [P2] 切换俯视会瞬间改变 pitch：切换期间暂时使用自由镜头，动画结束恢复模式；确认经过中间角度到终点。
+- [P2] 手机选点自动展开面板会中断 flyTo：把 padding 与状态同步后再发起同一次飞行；确认手机最终 zoom 17.15。
+- [P2] 初始加载镜头可能中断用户已发起的飞行：仅未交互、未飞行、仍在全国视野时播放初始镜头。
+- [P2] 选中点后面板保留旧滚动位置：选点/层级变化后滚动到顶部。
+- [P2] 手机版权区域被面板覆盖：移到顶部操作区下方，实际截图复查。
+
+没有待修复的 P0/P1/P2。以下是明确的功能边界，不伪装为已完成的生产能力。
+
+## 验证结果与边界
+
+- `node --test tests/map-geo.test.mjs`：5 / 5 通过，覆盖倾角连续与边界、层级、附近点距离、WGS84 精度范围、景点坐标范围。
+- `npm run build`：通过。地图引擎按需加载；引擎 chunk 约 1 MB（gzip 约 277 KB），Vite 提示大 chunk，属于后续性能优化项。
+- 最终浏览器 error/warn 日志为空，1440 和 390 视口均无水平溢出。
+- 尚未做真实手机触控硬件、真实 GPS 授权、断网与低端 GPU 性能测试。
+- 当前需联网获取地图切片。没有 DEM 实测地形网格、精细建筑模型、步行路线规划或园区实时数据。
+- 旧版故事与平台完整验证记录保存在 `docs/qa-web-v1.md`。
+
+## 写实质感迭代（2026-10-30，后续复核）
+
+用户选定：公开数据优先、自然水面、真实地形起伏与可信高度。当前目标是提升可用公开数据上的观感，尚未达到全部建筑摄影级重建。
+
+- 前后截图同一桌面视口 1440 × 1024：`qa/map-realism-before.png`、`qa/map-realism-palace.png`。近景：`qa/map-realism-tower.png`。
+- 接入 Terrarium DEM 与 hillshade，万寿山由平面变成地形；未夸大高程。
+- 水面从单色面改成水域内的动画细波与高光。未用屏幕固定遮罩，未残留跨湖内部瓦片边界线。
+- 建筑使用原数据高度、固定地理方向光照、颗粒材质与独立屋顶色；185 个园内四角轮廓补简化坡顶。佛香阁可辨认八面、四重檐的体量，阁身36.44米参考官网。
+- 在飞行中插入 terrain 曾触发 MapLibre 5.6 的未初始化 elevationTarget 异常。已改为飞行结束后启用；完整重新加载后入园与近景飞行未复发。历史控制台日志保留了修复前报错，不应误计为新版本错误。
+- 构建通过；地图算法/材质/体量测试共9项通过；Sites封装4项通过。样式通过 MapLibre Style Spec 校验。
+- 公开瓦片部分建筑使用默认或估算高度，屋顶形态为视觉解释，仍不是实景扫描；这些限制在地图说明、README、实施文档中明确。用户提出的“全部建筑高清真实”尚受模型数据缺失限制，不作已达到该标准的结论。
+- 移动端 390 × 844 已保存 `qa/map-realism-mobile.png`，水域、地标、操作控件与版权信息可见，无横向溢出。
+- 最终版以 Mercator 承载地形、低缩放恢复 globe；实际验证景区 → 全国 → 景区，刷新后的该轮控制台无新增 error 或 warn。之前的 globe fog matrix 警告已消除。
+- 本轮改进验收通过；“全部建筑摄影级高精”仍为未实现的数据能力，不包含在此通过结论中。
