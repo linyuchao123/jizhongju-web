@@ -85,3 +85,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - User approved the three Doubao TTS 2.0 Vivi 2.0 auditions and requested replacement across the full story, including current A/B routes. Use pre-rendered emotional clips with existing mute/replay controls.
 - User explicitly authorizes committing and pushing all current branch changes to origin/feature/leshoutang-story-preview. This supersedes the earlier do-not-push checkpoint. Do not merge into main or deploy this new story without a separate request.
 - Local .env.voice.local and QA audio are ignored; never commit credentials.
+
+## Two published editions (2026-11-01)
+- User explicitly authorizes merging feature/leshoutang-story-preview into main and publishing the existing Cloudflare custom domain.
+- Preserve original six-act experience as 颐和谜境（1） and workbook A/B story as 颐和谜境（2）. Both appear in archives, adventures and the collection version picker.
+- Stable identities palace-1 / palace-2, existing save keys remain unchanged. Photos with no storyId and no expedition flag are first-edition legacy photos; expedition=true legacy photos belong to edition 2. Scoped reset must not delete another edition's photos.
+- Both editions use the already-approved Volcengine/Doubao TTS recordings in voice-clips.json. Keep credentials out of frontend assets and Git.

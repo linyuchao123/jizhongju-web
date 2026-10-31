@@ -1,3 +1,4 @@
+import {STORY_TWO} from '../stories.mjs';
 import React,{useState,useEffect,useRef,Suspense,lazy} from 'react';
 import {ArrowLeft,ArrowRight,Scroll,BookOpen,X,Camera,MapPin,ArrowCounterClockwise} from '@phosphor-icons/react';
 import Leshoutang from '../leshoutang/Leshoutang.jsx';
@@ -10,17 +11,17 @@ export default function Expedition(){
  const [s,S]=useState(()=>restore(localStorage.getItem(KEY))),[drawer,D]=useState(null),[hint,H]=useState(false),[notice,N]=useState(''),[memories,M]=useState([]),[reset,R]=useState(false);const file=useRef();
  useEffect(()=>{localStorage.setItem(KEY,JSON.stringify(s))},[s]);
  useEffect(()=>{window.scrollTo({top:0,behavior:'instant'})},[s.chapter,s.phase]);
- useEffect(()=>{loadPhotos().then(M).catch(()=>N('相册暂时无法读取，故事仍可继续。'))},[]);
+ useEffect(()=>{loadPhotos(STORY_TWO).then(M).catch(()=>N('相册暂时无法读取，故事仍可继续。'))},[]);
  const c=CHAPTERS[s.chapter],line=c?(s.phase==='dialogue'?c.lines[s.beat]:s.phase==='reward'?c.after:c.purpose):'';
  const voice=useNarration({text:line,speaker:'阿衡',scene:s.chapter+s.phase+s.beat});
  function finish(proof){const next=complete(s,proof);if(next===s)return false;S(next);return true}
- async function upload(e){const f=e.target.files?.[0];e.target.value='';if(!f)return;try{const photo=await preparePhoto(f,{expedition:true,runId:s.runId,chapter:c.id,place:c.place,mode:s.mode,caption:s.notes[c.id]||''});await putPhoto(photo);M(await loadPhotos());N('这一刻已收进本机相册。演示记录不计作已核验到访。')}catch(e){N(e.message||'照片保存失败，请重试。')}}
- function restart(){localStorage.removeItem(START_KEY);S({...fresh(),history:s.history});R(false);D(null);H(false)}
+ async function upload(e){const f=e.target.files?.[0];e.target.value='';if(!f)return;try{const photo=await preparePhoto(f,{expedition:true,storyId:STORY_TWO,runId:s.runId,chapter:c.id,place:c.place,mode:s.mode,caption:s.notes[c.id]||''});await putPhoto(photo);M(await loadPhotos(STORY_TWO));N('这一刻已收进本机相册。演示记录不计作已核验到访。')}catch(e){N(e.message||'照片保存失败，请重试。')}}
+ function restart(){localStorage.removeItem(START_KEY);S({...fresh(),history:s.history,bookmarked:!!s.bookmarked});R(false);D(null);H(false)}
  if(!c)return <Leshoutang storageKey={START_KEY} onRoute={(route,mode)=>S(beginRoute(s,route,mode))}/>;
  const path=PATHS[s.route],index=path.indexOf(c.id),source=photos[c.scene],ownPhotos=memories.filter(p=>p.runId===s.runId);
  return <main className={'ex-game ex-phase-'+s.phase}>
  <img className="ex-bg" src={source.src} alt={c.place+'真实场景'}/><div className="ex-tint"/>
- <header className="ex-header"><button onClick={()=>location.hash='archive'}><ArrowLeft/>暂存离场</button><div><small>迹中局 / YHY · 路线 {s.route}</small><strong>颐和谜境 · 样式雷手札</strong></div><nav><span>{s.mode==='field'?'线下引导':'线上体验'} · 演示</span><button onClick={()=>D('bag')} aria-label="展开行囊"><Scroll/>{s.inventory.length}/{path.length}</button><button onClick={()=>R(true)} aria-label="重新开始"><ArrowCounterClockwise/></button></nav></header>
+ <header className="ex-header"><button onClick={()=>location.hash='archive'}><ArrowLeft/>暂存离场</button><div><small>迹中局 / YHY · 路线 {s.route}</small><strong>颐和谜境（2） · 样式雷手札</strong></div><nav><span>{s.mode==='field'?'线下引导':'线上体验'} · 演示</span><button onClick={()=>D('bag')} aria-label="展开行囊"><Scroll/>{s.inventory.length}/{path.length}</button><button onClick={()=>location.hash='collection-2'} aria-label="打开第二卷图鉴"><BookOpen/></button><button onClick={()=>R(true)} aria-label="重新开始"><ArrowCounterClockwise/></button></nav></header>
  <VoiceControls voice={voice}/>
  <div className="ex-title"><small>{c.mood} / {String(index+1).padStart(2,'0')}</small><h1>{c.title}</h1><p><MapPin size={15}/>{c.place}</p></div>
  <aside className="ex-chapters">{path.map((id,i)=><span key={id} className={id===s.chapter?'current':s.inventory.includes(id)?'done':''} title={id==='start'?'乐寿堂':CHAPTERS[id].place}>{s.inventory.includes(id)?'✓':i+1}</span>)}</aside>

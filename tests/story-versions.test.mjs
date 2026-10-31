@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {STORY_ONE,STORY_TWO,photosForStory,photoStory,STORY_VERSIONS} from '../src/stories.mjs';
+import {STORAGE_KEY,emptyJourney,restoreJourney} from '../src/palace/state.mjs';
+import {KEY,START_KEY,fresh,restore} from '../src/expedition/story.mjs';
+const data=[{id:'legacy',chapter:0},{id:'old-expedition',expedition:true,chapter:'a1'},{id:'one',storyId:STORY_ONE},{id:'two',storyId:STORY_TWO}];
+test('backward compatible photo ownership keeps both versions disjoint',()=>{assert.deepEqual(photosForStory(data,STORY_ONE).map(p=>p.id),['legacy','one']);assert.deepEqual(photosForStory(data,STORY_TWO).map(p=>p.id),['old-expedition','two']);assert.equal(photoStory({storyId:STORY_ONE,expedition:true}),STORY_ONE)});
+test('resetting the first story selects no second story photos',()=>{const deleting=photosForStory(data,STORY_ONE).map(p=>p.id);const remain=data.filter(p=>!deleting.includes(p.id));assert.deepEqual(remain,photosForStory(data,STORY_TWO))});
+test('story keys and old story progress survive independent restoration',()=>{assert.equal(new Set([STORAGE_KEY,KEY,START_KEY]).size,3);const one={...emptyJourney(),chapter:3,inventory:[{id:'journal'}]},two={...fresh(),chapter:'b2',route:'B',inventory:['start','b1']};assert.equal(restoreJourney(JSON.stringify(one)).chapter,3);assert.deepEqual(restore(JSON.stringify(two)).inventory,['start','b1']);assert.equal(STORY_VERSIONS[0].title,'颐和谜境（1）');assert.equal(STORY_VERSIONS[1].title,'颐和谜境（2）')});
+test('both story paths have pre-rendered approved Volcengine audio files',()=>{const clips=JSON.parse(fs.readFileSync('src/palace/voice-clips.json'));for(const v of Object.values(clips)){assert.equal(v.provider,'doubao-tts-2.0');assert.equal(v.speaker,'zh_female_vv_uranus_bigtts');assert.ok(fs.statSync('public'+v.src).size>1000)}});

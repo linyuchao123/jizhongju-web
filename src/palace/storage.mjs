@@ -1,10 +1,11 @@
+import {photosForStory} from '../stories.mjs';
 const DB='jizhongju-memories',STORE='photos';
 function open(){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB,1);req.onupgradeneeded=()=>req.result.createObjectStore(STORE,{keyPath:'id'});req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
 async function transact(mode,action){const db=await open();try{return await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,mode),req=action(tx.objectStore(STORE));let result;req.onsuccess=()=>{result=req.result};tx.oncomplete=()=>resolve(result);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error)})}finally{db.close()}}
-export const loadPhotos=()=>transact('readonly',s=>s.getAll());
+export const loadPhotos=async storyId=>{const photos=await transact('readonly',s=>s.getAll());return storyId?photosForStory(photos,storyId):photos};
 export const putPhoto=photo=>transact('readwrite',s=>s.put(photo));
 export const removePhoto=id=>transact('readwrite',s=>s.delete(id));
-export const clearPhotos=()=>transact('readwrite',s=>s.clear());
+export const clearPhotos=async storyId=>{if(!storyId)return transact('readwrite',s=>s.clear());const db=await open();try{await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readwrite'),store=tx.objectStore(STORE),cursor=store.openCursor();cursor.onsuccess=()=>{const c=cursor.result;if(!c)return;if(photosForStory([c.value],storyId).length)c.delete();c.continue()};tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}finally{db.close()}};
 export async function preparePhoto(file,meta){
  if(!file.type.startsWith('image/'))throw new Error('请选择 JPG、PNG 或其他浏览器支持的图片。');
  if(file.size>12*1024*1024)throw new Error('请选择 12MB 以内的照片。');
