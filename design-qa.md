@@ -64,3 +64,12 @@ New mobile account screenshot: `qa/account-mobile-final.png`, 390×844 pixels/CS
 
 ## 2026-10-31 offline rewrite
 Mobile 390×844 inspected. One archive entry, no startup GPS/camera gate, uncropped real photos, joint submission UI, native camera input. Finder centres destination when location times out; selected answer survives return. Voice toolbar corrected from a floating overlap to a sticky separate row. Evidence: qa/trail-mobile-final.png. Source/limits: docs/offline-rewrite-2026-10-31.md. No field visit claimed.
+
+## Leshoutang single-scene checkpoint
+final result: passed
+
+Source: user-approved cinematic screenshots (Aheng portrait, full-bleed scene, ivory lower dialogue panel, illustrated collectibles). New content follows workbook row 2, so this is style-preserving scene authoring rather than a pixel clone of the old gate.
+
+Compared source and current desktop opening in the same image: qa/leshoutang-style-comparison.jpg. The full-screen scene, mineral green treatment, portrait/dialogue anatomy, typography and tool hierarchy remain. New floating journal and three-object investigation cards are intentional story-specific additions. No blocking P0/P1/P2 visual differences for this checkpoint.
+
+390×844 phone opening inspected in qa/leshoutang-mobile.png: title, journal page, portrait, dialogue and action are readable; content scrolls on shorter displays. Browser walkthrough verified all three investigations, wrong/correct answer paths, seal award, route preview and reset; no console errors. Generated artefacts are labelled interpretations, and demonstration does not claim photo/GPS verification. Latest test and build results are recorded in docs/leshoutang-first-scene.md.

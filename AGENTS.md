@@ -57,3 +57,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Restore the complete former six-act story and its existing dialogue, clues, memory naming, branches, three endings, chat, sources and collection; do not replace this with a long form.
 - Both online immersion and offline play exist. Demonstration is enabled by default for either entry, with no required photos, uploads or GPS. Demo memories must never be represented as verified visits.
 - Keep one fixed NPC Aheng with prior portrait/voice controls. No confusing role-selection gate. Scene art and item art from existing assets are explicitly approved for restoration.
+
+## Leshoutang review checkpoint
+- Preserve snapshot/cinematic-demo-20261031 at 8981e25. Work only in feature/leshoutang-story-preview for the new workbook-based story.
+- User currently requests only the Leshoutang scene for visual/interaction review before continuing remaining chapters. Do not develop subsequent chapters or deploy until the user asks.
+- Dedicated /#leshoutang route and separate local save. Existing /#archive six-act demo remains available.
+- Spreadsheet row 2 is authoritative for this scene, except mandatory GPS/photos are relaxed for demonstration by latest user instruction. Full-screen green/ivory cinematic style and Aheng portrait remain.
