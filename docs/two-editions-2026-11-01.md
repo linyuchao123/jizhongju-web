@@ -8,3 +8,11 @@
 - 51项自动测试通过、生产构建通过。浏览器检查档案两入口、原六幕任务仍存在、第二卷续玩、第二卷返回其图鉴、版本切换、手机宽度。以前版本已有的6件信物与新双线9件信物分别显示。
 - 本轮未改动D1数据；只读核对users/sessions/user_profiles均存在。剧情、图鉴、照片仍本机保存，未做云同步。
 - 截图：qa/dual-archive-desktop.png、qa/dual-collection-mobile.png。
+
+## 发布结果
+- 功能提交：33ecbc3；main 合并提交：23d9806。main 与 feature/leshoutang-story-preview 均已推送成功。
+- Cloudflare Worker 版本：a5020a0e-ca99-4cc5-9ffd-5599afadf2d8。自定义域名 jizhongju.xiaolinyx.me 发布成功。
+- 正式域名首页 HTTP 200，实际资源为 index-KS61U9Y5.js / index-D4o8GzHN.css。下载线上JS核对两个版本名及 doubao-tts-2.0 清单均存在。
+- 正式域名配音抽检：3bb97b46f41aa107.mp3 返回200，audio/mpeg，120621 bytes，24kHz/64kbps MP3。134段资产随发布上传/复用成功。
+- GitHub首次TLS超时，兼容HTTP/1.1重试后推送成功。网络抽检经当前macOS已有127.0.0.1:7890代理成功；未更改系统代理配置。
+- 浏览器正式域名联调工具连续超时，本轮正式站视觉验收未完成；可确认的视觉验收来自本地同一构建源码。线上HTTP、代码包与音频资源均已确认，不能据此声称所有微信/手机环境音质或实地功能已验收。
