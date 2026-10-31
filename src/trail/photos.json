@@ -1,0 +1,83 @@
+{
+  "乐寿堂": {
+    "src": "/assets/real/scene-0.webp",
+    "author": "Haluk Comertel",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Haidian,_Beijing,_China_-_panoramio_(224).jpg",
+    "caption": "Haidian, Beijing, China",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "长廊": {
+    "src": "/assets/real/scene-1.webp",
+    "author": "钉钉",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Long_Corridor.jpg",
+    "caption": "Long Corridor",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "佛香阁": {
+    "src": "/assets/real/scene-2.webp",
+    "author": "Bingar1234",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kina_Summerpalace_117.jpg",
+    "caption": "Summerpalace",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "昆明湖": {
+    "src": "/assets/real/scene-3.webp",
+    "author": "Leiem",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kunming_Lake_(2019_Beijing)_01.jpg",
+    "caption": "​昆明湖（北京）",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "清晏舫": {
+    "src": "/assets/real/scene-4.webp",
+    "author": "Daniel Case",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marble_Boat_from_stern,_Summer_Palace,_Beijing.jpg",
+    "caption": "Marble Boat in  Kunming Lake  at the  Summer Palace , Beijing",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "仁寿殿": {
+    "src": "/assets/real/scene-5.webp",
+    "author": "PIERRE ANDRE LECLERCQ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9kin_-_Statue_de_Dragon_face_au_Hall_de_la_Bienveillance_et_de_la_Long%C3%A9vit%C3%A9_au_Palais_d%27Et%C3%A9_-.jpg",
+    "caption": "Le   Palais_d'Été , à  Pékin  .-    Chine",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "文昌阁": {
+    "src": "/assets/real/scene-6.webp",
+    "author": "Fumihiko Ueno",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Haidian,_Beijing,_China_-_panoramio_(192).jpg",
+    "caption": "Haidian, Beijing, China",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "十七孔桥": {
+    "src": "/assets/real/scene-7.webp",
+    "author": "Leiem",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bridge_of_the_Summer_Palace_(2019).jpg",
+    "caption": "​颐和园景色",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  },
+  "铜牛": {
+    "src": "/assets/real/scene-8.webp",
+    "author": "Yun Huang Yong  from Harbord, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_Ox,_Summer_Palace,_Beijing_(24569731336).jpg",
+    "caption": "savetherailings",
+    "treatment": "仅等比例缩放与格式压缩，未生成或替换建筑"
+  }
+}

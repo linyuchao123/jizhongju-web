@@ -24,13 +24,13 @@ export function waterMaterial(time=0,size=256){
   const slope=.48*a+.30*c+.16*d;
   const sparkle=Math.pow(Math.max(0,(slope+.15)/1.09),12)*42;
   const diffuse=slope*7+swell*8;
-  data[i]=37+diffuse+sparkle;data[i+1]=91+diffuse+sparkle;data[i+2]=80+diffuse+sparkle*.9;data[i+3]=255;
+  data[i]=48+diffuse+sparkle;data[i+1]=111+diffuse+sparkle;data[i+2]=98+diffuse+sparkle*.9;data[i+3]=255;
  }
  return {width:size,height:size,data};
 }
 export function surfaceMaterial(kind, size=128) {
  const data=new Uint8Array(size*size*4);
- const base=kind==='wood'?[117,141,96]:[184,174,153];
+ const base=kind==='wood'?[105,132,79]:[184,174,153];
  for(let y=0;y<size;y++)for(let x=0;x<size;x++){
   const u=x/size*TAU,v=y/size*TAU;
   const grain=Math.sin(u*21+Math.sin(v*13))*Math.sin(v*27+u*8)*3;

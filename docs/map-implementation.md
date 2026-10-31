@@ -72,3 +72,11 @@ npm run build
 - https://summerpalace.net.cn/longevity/detailqianshan/382.html
 - 园内坡屋顶：`public/data/palace-roof-footprints.json` 保存公开矢量瓦片中的 185 个单环四角轮廓与原 render_height；保留 OSM / OpenMapTiles / OpenFreeMap 标注。只在核心园区范围补充 1.8–3 米的简化庑殿式坡顶解释，避免复杂内院或超大轮廓错误收拢。该屋顶形态与尺寸不是 OSM 提供的实测信息，不涵盖所有建筑，不称“全部高精模型”。
 - 投影兼容：景区地形启用时明确切到 Mercator；低于 z10 时先移除 terrain，再恢复 globe。此缩放级别地球视图已经贴近平面，仍为同一个 MapLibre 场景与连续镜头；避免 globe transform 的 terrain fog matrix 不支持警告。
+
+## 2026-10-31 refinement
+
+Neutralized atmosphere blending (explicit 0), disabled Natural Earth raster overlay, kept horizon fog away from map center. Forest/park palette is deeper; hillshade reduced to 0.23 and only shown at regional zooms. Terrain begins at z14.5 and pitch eases to a bounded 52 degrees rather than excessive early tilt. Terrain DEM remains public low-resolution data: these are not photogrammetric models.
+
+Added 55 major scenic/entrance anchors: 35 from available public OSM geometry, 20 reference observation anchors explicitly identified in the detail panel. Search and category filters retain access when labels collide. Fixed Fuxiang Pavilion placement using the actual octagonal building footprint; height remains the officially documented 36.44 m, interpreted rather than surveyed architectural detail.
+
+Narrative scene artwork is used in story previews; it never replaces navigable geometry. Map → story and story → scene location share point ids. Future production needs licensed detailed 3D assets, high-resolution terrain, field route and anchor verification, and a stable map data service.

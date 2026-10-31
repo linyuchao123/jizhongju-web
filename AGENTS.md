@@ -30,3 +30,30 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - 用户选择写实地图：自然水面、地形起伏、可信建筑高度；没有付费服务账号，先使用公开数据。
 - 降低积木/塑料感；用真实 DEM、建筑数据高度、贴合水域的细波材质。禁止随机建筑高度冒充测绘，不用 AI 图片替代真实地图。
 - 佛香阁资料以颐和园官网为准：阁身高 36.44 米、八面三层四重檐。体量补模须标明解释性建模，不声称精细实景重建。
+
+## Palace story and map refinement (2026-10-31)
+
+- 用户要求修复全球大气染色造成的左右色差，强化自然植被色，减弱蜡状地形与过度倾斜。
+- 地图增加 55 个主要景点与出入口，支持搜索、分类；公开几何点和参考观察点必须区分，不承诺穷尽园内每件小景或已校测步行路径。
+- 新主线《颐和谜境·样式雷手札》依据团队两版 PDF 改编，突出悬疑探索与反转，六幕分镜、NPC、玉澜堂/仁寿殿支线、三个归档结尾。
+- 平台仍保持通用明亮导航；独立故事使用矿物青绿与纸本武侠视觉。场景、角色及信物用匹配的插画资产，不替代真实地图几何。
+- 图鉴支持六件信物、对应照片和体验卷宗。当前本机存储；NPC 为预设分支，实时 AI 与云同步尚未接入。
+
+## Launch and dual modes (2026-10-31)
+- 用户授权部署 Cloudflare 并绑定 jizhongju.xiaolinyx.me。保持已部署版本可体验，比赛展示优先移动端。
+- 首页集中解释文化体验游戏与两种入口；其他城市、北京未开放景点明确为敬请期待。
+- 线上增加悬疑对白；线下有本站目的、观察、路线引导，GPS 在参考范围且精度 ≤100m、照片、至少四字记录齐备后推进。GPS 仅本机计算，不上传原始坐标；不声称照片真实性核验。
+- 账号使用真实 Cloudflare D1 会话；当前游玩进度和相册仍为本机数据，不声称云同步。语音目前使用设备提供的中文声线，可关闭、重播、切换；不声称专业录音。
+
+## Offline rewrite accepted (2026-10-31, supersedes dual modes)
+- Only offline exploration. No role selection or initial location/photo gate. One start button.
+- Content follows docs/source-extracts/game-workbook.json. Real photographs retain author/license links; mobile uses uncropped image reference.
+- Submit fresh GPS plus answers and required photographs together. Photos/audio are sent to Cloudflare AI only on submission; raw coordinates are processed for validation and not persisted. Do not claim untested recognition accuracy.
+- Current story/photo progress remains on this device; real accounts do not imply cloud synchronization.
+- Finder preserves mounted task and unsent evidence, centres destination even if GPS is denied. Fictional conspiracy and hypothetical reconstructions must be labelled.
+
+## Cinematic restoration (latest user decision, supersedes offline-only rewrite)
+- Use the supplied previous-version screenshots as visual source: full-bleed cinematic scene, mineral green tint, ivory dialogue panel, Aheng portrait, illustrated collectible reward modals and illustrated collection cards.
+- Restore the complete former six-act story and its existing dialogue, clues, memory naming, branches, three endings, chat, sources and collection; do not replace this with a long form.
+- Both online immersion and offline play exist. Demonstration is enabled by default for either entry, with no required photos, uploads or GPS. Demo memories must never be represented as verified visits.
+- Keep one fixed NPC Aheng with prior portrait/voice controls. No confusing role-selection gate. Scene art and item art from existing assets are explicitly approved for restoration.
