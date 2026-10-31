@@ -4,10 +4,12 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {CHAPTERS as expeditionChapters} from '../src/expedition/story.mjs';
 import {CHAPTERS as palaceChapters} from '../src/palace/story.mjs';
+import {ALL_VOICE_LINES} from '../src/leshoutang/story.mjs';
 import {FIELD_TASKS,chapterForMode} from '../src/palace/modes.mjs';
 
 export function completeVoiceLines(manifest){
  const lines={...manifest};
+ for(const text of ALL_VOICE_LINES)if(!lines[text])lines[text]={mood:/疑|为什么|究竟|暗语/.test(text)?'mystery':'companion'};
  for(const [index,chapter] of palaceChapters.entries()){
   const expected=[chapter.reward,chapter.objective,chapter.hints[0],FIELD_TASKS[index].observe];
   for(const mode of ['preview','field'])expected.push(...chapterForMode({...chapter,index},mode).lines.map(line=>line[1]));

@@ -1,13 +1,13 @@
 import React,{useState,useEffect,useRef} from 'react';
 import {ArrowLeft,ArrowRight,BookOpen,Scroll,Check,X,Camera,ArrowCounterClockwise,MapPin,Eye,Sparkle,SpeakerHigh,Compass,ArrowUpRight} from '@phosphor-icons/react';
 import {useNarration,VoiceControls} from '../palace/Voice.jsx';
-import {ASSETS,OBJECTS,OPENING,CHOICES,KEY,fresh,restore,recordObject,solve,collect} from './story.mjs';
+import {ASSETS,OBJECTS,OPENING,CHOICES,KEY,narrationFor,fresh,restore,recordObject,solve,collect} from './story.mjs';
 import '../palace/palace.css';import './leshoutang.css';
 const SEAL=ASSETS+'taiping-seal.webp';
 export default function Leshoutang({onRoute,storageKey=KEY}){
  const [s,set]=useState(()=>{try{return restore(localStorage.getItem(storageKey))}catch{return fresh()}}),[focus,setFocus]=useState(null),[drawer,setDrawer]=useState(null),[reply,setReply]=useState('三种轮廓，藏在同一页手札里。轻触器物，凑齐师父留下的暗语。'),[wrong,setWrong]=useState(false),[reset,setReset]=useState(false),[photoError,setPhotoError]=useState('');const file=useRef();const object=OBJECTS.find(o=>o.id===focus);
  useEffect(()=>{try{localStorage.setItem(storageKey,JSON.stringify(s))}catch{setPhotoError('本机存储已满，本次照片暂未保存。')}},[s]);
- const line=object?object.reply:s.phase==='opening'?OPENING[s.beat]:s.phase==='investigate'?reply:s.phase==='riddle'?(wrong?'方向接近了，但我们再想想。古人常把器物和动物组合起来表达吉祥愿望。提示里有“六合”两个字。':'师兄/师姐，师父为什么偏偏让我们找这三件东西？它们放在一起，究竟代表什么？'):s.phase==='reveal'?'答对了！这组陈设寓意“六合太平”。原来师父留下的不是随手画的三个图案，而是一组有文化含义的线索。':s.phase==='reward'?'第一枚记忆印章到手！手札背面还有一句：“万卷故事藏画中，三人桃园结义情。”下一站，我们去长廊找画！':'你读懂的不是一串暗号，而是一座庭院寄托的愿望。把这枚印章收好，师父留下的地图，才刚刚展开。';
+ const line=narrationFor(s,{object,reply,wrong});
  const voice=useNarration({text:line,speaker:'阿衡',scene:s.phase+String(s.beat)+focus});
  function record(){set(p=>recordObject(p,focus));setReply(object.reply);setFocus(null);setWrong(false)}
  async function photo(e){const f=e.target.files?.[0];e.target.value='';if(!f||!focus)return;try{if(!f.type.startsWith('image/')||f.size>15000000)throw Error('请选择 15MB 内的照片。');const url=URL.createObjectURL(f);try{const im=new Image();im.src=url;await im.decode();const c=document.createElement('canvas'),r=Math.min(1,960/Math.max(im.width,im.height));c.width=im.width*r;c.height=im.height*r;c.getContext('2d').drawImage(im,0,0,c.width,c.height);const src=c.toDataURL('image/jpeg',.75);set(p=>({...p,photos:{...p.photos,[focus]:src}}))}finally{URL.revokeObjectURL(url)}}catch(e){setPhotoError(e.message)}}

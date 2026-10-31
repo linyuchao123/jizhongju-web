@@ -802,5 +802,11 @@
     "src": "/assets/voice/doubao/7d3cd1903f7a73fa.mp3",
     "provider": "doubao-tts-2.0",
     "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "师兄/师姐，师父为什么偏偏让我们找这三件东西？它们放在一起，究竟代表什么？": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/3651c1848c469d39.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
   }
 }

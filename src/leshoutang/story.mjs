@@ -15,3 +15,20 @@ export function restore(raw){try{const s=typeof raw==='string'?JSON.parse(raw):r
 export function recordObject(s,id){if(s.phase!=='investigate'||!OBJECTS.some(o=>o.id===id))return s;return {...s,found:[...new Set([...s.found,id])]}}
 export function solve(s,choice){if(s.phase!=='riddle'||s.found.length!==3)return s;return {...s,choice,phase:choice==='六合太平'?'reveal':'riddle'}}
 export function collect(s){return s.phase==='reward'&&s.choice==='六合太平'&&s.found.length===3?{...s,collected:true,phase:'fork'}:s}
+
+export const NPC_LINES={
+  "investigate": "三种轮廓，藏在同一页手札里。轻触器物，凑齐师父留下的暗语。",
+  "riddle": "师兄/师姐，师父为什么偏偏让我们找这三件东西？它们放在一起，究竟代表什么？",
+  "wrong": "方向接近了，但我们再想想。古人常把器物和动物组合起来表达吉祥愿望。提示里有“六合”两个字。",
+  "reveal": "答对了！这组陈设寓意“六合太平”。原来师父留下的不是随手画的三个图案，而是一组有文化含义的线索。",
+  "reward": "第一枚记忆印章到手！手札背面还有一句：“万卷故事藏画中，三人桃园结义情。”下一站，我们去长廊找画！",
+  "fork": "你读懂的不是一串暗号，而是一座庭院寄托的愿望。把这枚印章收好，师父留下的地图，才刚刚展开。"
+};
+export const ALL_VOICE_LINES=[...OPENING,...OBJECTS.map(o=>o.reply),...Object.values(NPC_LINES)];
+export function narrationFor(s,{object,reply=NPC_LINES.investigate,wrong=false}={}){
+ if(object)return object.reply;
+ if(s.phase==='opening')return OPENING[s.beat];
+ if(s.phase==='investigate')return reply;
+ if(s.phase==='riddle')return wrong?NPC_LINES.wrong:NPC_LINES.riddle;
+ return NPC_LINES[s.phase]||NPC_LINES.fork;
+}
