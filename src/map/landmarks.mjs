@@ -1,10 +1,10 @@
-// Architectural massing, not a survey model. Centre derived from the nearest
+// Architectural massing, not a survey model. Centre corrected to the octagonal
 // OSM footprint (OpenFreeMap 20261025 tile 14/13483/6202); footprint proportions
 // and eaves are interpreted. Tower height / eight sides / four eaves:
 // https://summerpalace.net.cn/longevity/detailqianshan/382.html
 export const TOWER_SOURCE='https://summerpalace.net.cn/longevity/detailqianshan/382.html';
 export const TOWER_HEIGHT=36.44;
-const center=[116.27409607172012,39.99895090785603];
+const center=[116.26798197627068,39.99782645160114];
 function octagon(radius){
  const ring=Array.from({length:8},(_,i)=>{const a=(i*45+22.5-7)*Math.PI/180;return [center[0]+Math.cos(a)*radius/(111320*Math.cos(center[1]*Math.PI/180)),center[1]+Math.sin(a)*radius/111320]});ring.push([...ring[0]]);return {type:'Polygon',coordinates:[ring]};
 }

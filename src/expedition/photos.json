@@ -1,0 +1,110 @@
+{
+  "corridor": {
+    "src": "/assets/expedition/corridor.webp",
+    "author": "钉钉",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Long_Corridor.jpg",
+    "title": "File:Long Corridor.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "corridor-detail": {
+    "src": "/assets/expedition/corridor-detail.webp",
+    "author": "Mulligan Stu",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Beijing_-_Summer_Palace_(8271559839).jpg",
+    "title": "File:Beijing - Summer Palace (8271559839).jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "tower": {
+    "src": "/assets/expedition/tower.webp",
+    "author": "Bingar1234",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kina_Summerpalace_117.jpg",
+    "title": "File:Kina Summerpalace 117.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "lake": {
+    "src": "/assets/expedition/lake.webp",
+    "author": "钉钉",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kunming_Lake_2.jpg",
+    "title": "File:Kunming Lake 2.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "stoneboat": {
+    "src": "/assets/expedition/stoneboat.webp",
+    "author": "Daniel Case",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marble_Boat_from_stern,_Summer_Palace,_Beijing.jpg",
+    "title": "File:Marble Boat from stern, Summer Palace, Beijing.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "renshou": {
+    "src": "/assets/expedition/renshou.webp",
+    "author": "Scott Edmunds",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Summer_Palace,_Beijing,_Big_pillars_(14575432860).jpg",
+    "title": "File:Summer Palace, Beijing, Big pillars (14575432860).jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "renshou-statues": {
+    "src": "/assets/expedition/renshou-statues.webp",
+    "author": "PIERRE ANDRE LECLERCQ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9kin_-_Statue_de_Dragon_face_au_Hall_de_la_Bienveillance_et_de_la_Long%C3%A9vit%C3%A9_au_Palais_d%27Et%C3%A9_-.jpg",
+    "title": "File:Pékin - Statue de Dragon face au Hall de la Bienveillance et de la Longévité au Palais d'Eté -.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "wenchang": {
+    "src": "/assets/expedition/wenchang.webp",
+    "author": "Fumihiko Ueno",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Haidian,_Beijing,_China_-_panoramio_(192).jpg",
+    "title": "File:Haidian, Beijing, China - panoramio (192).jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "bridge": {
+    "src": "/assets/expedition/bridge.webp",
+    "author": "shankar s.",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2017-05-20_A_closer_view_of_the_17-arch_bridge.jpg",
+    "title": "File:2017-05-20 A closer view of the 17-arch bridge.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "bridge-wide": {
+    "src": "/assets/expedition/bridge-wide.webp",
+    "author": "Daniel Case",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boats_on_Kunming_Lake_near_17_Arch_Bridge.jpg",
+    "title": "File:Boats on Kunming Lake near 17 Arch Bridge.jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "ox": {
+    "src": "/assets/expedition/ox.webp",
+    "author": "J Dammarell",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_OZ_and_view_of_17_Arches_Bridge_*_(48790211757).jpg",
+    "title": "File:Bronze OZ and view of 17 Arches Bridge * (48790211757).jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  },
+  "ox-front": {
+    "src": "/assets/expedition/ox-front.webp",
+    "author": "Yun Huang Yong  from Harbord, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_Ox,_Summer_Palace,_Beijing_(24569731336).jpg",
+    "title": "File:Bronze Ox, Summer Palace, Beijing (24569731336).jpg",
+    "treatment": "等比压缩，未改写建筑与场景"
+  }
+}

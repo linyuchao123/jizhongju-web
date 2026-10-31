@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {pitchForZoom,stageForZoom,distanceKm,nearestPoi,accuracyPolygon,POIS} from '../src/map/geo.mjs';
 test('camera pitch is continuous, bounded and increases toward scenic detail',()=>{
- assert.equal(pitchForZoom(3),0);assert.equal(pitchForZoom(10),0);assert.equal(pitchForZoom(16),57);assert.equal(pitchForZoom(19),57);
+ assert.equal(pitchForZoom(3),0);assert.equal(pitchForZoom(10),0);assert.equal(pitchForZoom(18),52);assert.equal(pitchForZoom(19),52);
  let previous=0;for(let z=3;z<19;z+=.01){const pitch=pitchForZoom(z);assert.ok(pitch>=previous);assert.ok(pitch-previous<.15);previous=pitch}
 });
 test('continuous camera thresholds change detail without requiring a new map',()=>{
@@ -16,5 +16,5 @@ test('accuracy polygon is closed and expressed in meters around a WGS84 coordina
  for(const p of ring)assert.ok(Math.abs(distanceKm(center,p)-.120)<.0001);
 });
 test('public scenic coordinates remain within the Summer Palace demonstration extent',()=>{
- for(const p of POIS){assert.ok(p.coord[0]>116.25&&p.coord[0]<116.29);assert.ok(p.coord[1]>39.98&&p.coord[1]<40.01);assert.ok(p.source.startsWith('https://www.wikidata.org/'))}
+ for(const p of POIS){assert.ok(p.coord[0]>116.25&&p.coord[0]<116.29);assert.ok(p.coord[1]>39.98&&p.coord[1]<40.01);assert.ok(/^https:\/\/(www\.)?(openstreetmap\.org|summerpalace\.net\.cn)\//.test(p.source))}
 });

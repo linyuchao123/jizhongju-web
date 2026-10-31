@@ -1,0 +1,806 @@
+{
+  "师兄/师姐，终于到乐寿堂了！师父在手札里留下了三个图案：鹿、鹤，还有一只瓶子。奇怪的是，他没有写地点，只说“庭院里藏着一个太平愿望”。": {
+    "src": "/assets/voice/doubao/3bb97b46f41aa107.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我们先别急着猜答案。你负责在现场寻找，我来帮你查档案。记住，只在允许游览的区域观察，不要触碰任何陈设。": {
+    "src": "/assets/voice/doubao/c7a44983ae15cc53.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "找到了！这应该是铜鹿。先把这个轮廓记下来。别急着把“鹿”当成答案，它也许只是半句暗语。": {
+    "src": "/assets/voice/doubao/ddd78711e6d6bb1a.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "第二个图案是鹤。鹿、鹤……师父把它们画在同一页，应该不只是因为它们好看。": {
+    "src": "/assets/voice/doubao/b6da2725d33f3877.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "最后一件，是铜花瓶。鹿、鹤、瓶都找齐了！它们放在一起，究竟表达什么？": {
+    "src": "/assets/voice/doubao/7033ec50088fc5e2.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你刚走近园门，手机里多了一份未署名的档案。封面像被翻过无数次，唯独落款处，干净得反常。": {
+    "src": "/assets/voice/doubao/b982f497d1820043.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "有人说，写下它的匠人在重修后失踪了。可档案里，连他的姓名都找不到。": {
+    "src": "/assets/voice/doubao/5c3464bf3bdfbd75.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你看，纸页的毛边已经泛黄，署名处却太干净了。像有人特意把“谁写的”留给了后来者。": {
+    "src": "/assets/voice/doubao/c4578b6f0327c8cf.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我不想再讲一个未经核实的失踪故事。你愿意和我走一遍，看看它到底留下了什么吗？": {
+    "src": "/assets/voice/doubao/b7aa0f653d6068d7.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "站在北如意门外安全区域，观察门额或入口环境。 写下你进入园林时最先注意到的一处细节。": {
+    "src": "/assets/voice/doubao/66a873b3c07b04dc.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你接住了半本手札。阿衡在目录旁，添上了你的身份。": {
+    "src": "/assets/voice/doubao/4a1fd7551f5e72b0.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择你的调查身份，接下这份来历不明的委托。": {
+    "src": "/assets/voice/doubao/c3c1709769f4aead.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "没有标准身份，选你最感兴趣的一种。": {
+    "src": "/assets/voice/doubao/27ae87e0d29eb668.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "身份只改变提示的角度，不会限制路线。": {
+    "src": "/assets/voice/doubao/fa3321ef4ac77fc9.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "三种身份都可以完整体验故事。": {
+    "src": "/assets/voice/doubao/cae5c388e7603531.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "手札上有一句被反复描深的话：“吾避于山腰，不在画中，在画外。”纸页边，画着半截窗框。": {
+    "src": "/assets/voice/doubao/62fedcac9a228d99.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "先别急着数檐角。看看眼前这一层柱檐、林木，再把目光送到湖面。": {
+    "src": "/assets/voice/doubao/7161f8af576ce8c8.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我原以为这句话是一张藏身图。直到你换了一个角度，才发现它也可以是一种观看的方法。": {
+    "src": "/assets/voice/doubao/0ffd39ff7a9f1a9e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "如果换一个站位，画面就变了——会不会真正的线索，是“怎么看”，而不是“数多少”？": {
+    "src": "/assets/voice/doubao/efee519557bac096.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "寻找安全观景点，依次观察近处栏檐、中间林木、远处湖山。 记录换一个站位后，画面发生了怎样的变化。": {
+    "src": "/assets/voice/doubao/a18d38312b49ae33.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你获得了“借景之镜”。镜面映出的，是你开始认真观看的那一刻。": {
+    "src": "/assets/voice/doubao/d0e3550cdb541e37.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "寻找“近景、中景、远景”三层线索，留意视角怎样改变风景。": {
+    "src": "/assets/voice/doubao/33fa6b71af0af86e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "先找离你最近的一根柱或一道檐。": {
+    "src": "/assets/voice/doubao/c436b80bacefb17c.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "再找中间的树冠与远方的湖面。": {
+    "src": "/assets/voice/doubao/4ff5c2e8e105c602.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择同时记录三个层次的观察。": {
+    "src": "/assets/voice/doubao/6ff518ed09c1c67e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "廊下的光一格一格落在地上。手札背面，忽然显出一行较新的字迹：“你看见的，是风景，还是别人替你选好的答案？”": {
+    "src": "/assets/voice/doubao/ba2ddd047ebb1e38.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "这一页的笔迹和前面不同。也许我们读到的，早就不止一个人的故事。": {
+    "src": "/assets/voice/doubao/adf47264834ecee8.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "前一页让我们找他，这一页却问你看见了什么。若这些字出自不同的人，那半本空白，会不会正在等待另一个写作者？": {
+    "src": "/assets/voice/doubao/22c1140d08f24785.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "这一次，别替他作答。挑一眼你愿意记住的风景，给它起个名字。": {
+    "src": "/assets/voice/doubao/a81a3ad57bb4114e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在长廊开放段挑一个可停留的位置，用柱框或窗景组织画面。 为你的照片写一句理由：为什么愿意记住这一眼？": {
+    "src": "/assets/voice/doubao/4fa11b6299b0a069.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "“廊间画笺”已收入行囊。这一次，手札上留下的是你的字。": {
+    "src": "/assets/voice/doubao/87f1619869109aa8.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "给这一眼风景起个名字；实地游玩时，也可以拍下自己的廊间画面。": {
+    "src": "/assets/voice/doubao/bef344e4cc016671.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "可以写下光线、颜色或一种心情。": {
+    "src": "/assets/voice/doubao/16d333dab22be62a.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "不用寻找官方“标准取景角度”。": {
+    "src": "/assets/voice/doubao/898ba8141cace02e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择任一建议标题，或输入自己的名字。": {
+    "src": "/assets/voice/doubao/c743b4b8d056e1f3.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "一页断札，指向两处宫殿。馆藏摘要里，一个声音断言：“只要看懂这些构件，就能知道匠人当年的秘密行动。”": {
+    "src": "/assets/voice/doubao/9003739040e7ed55.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "这句话太确定了。一个构件，真的能替一个人的一生作证吗？": {
+    "src": "/assets/voice/doubao/b526538bf717b44b.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "两面宫墙，像两份不同的证词。相同的构件能被讲成不同的故事——这一次，我想听你说：哪些是你看见的，哪些只是我们想相信的。": {
+    "src": "/assets/voice/doubao/6c1dadb92842c115.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "去玉澜堂，或去仁寿殿。我们不赶着判案，先听完两边的说法。": {
+    "src": "/assets/voice/doubao/99a503d13406d985.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择玉澜堂或仁寿殿，在允许拍照的公共区域观察构件或殿前陈设。 写下一个你亲眼看见的事实，再补一句尚不能证明的推断。": {
+    "src": "/assets/voice/doubao/b2a9e026aaf40ddc.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你获得了“留白之印”。有时候，诚实的空白，比笃定的答案更接近真相。": {
+    "src": "/assets/voice/doubao/5d3020f448242721.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择一条调查支线，辨别观察与推断之间的距离。": {
+    "src": "/assets/voice/doubao/fb6d14e22b2aacaf.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "先问：这句话描述的是所见，还是人物动机？": {
+    "src": "/assets/voice/doubao/1753c9d35c438a23.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "器物可见，不等于秘密行动已经被证实。": {
+    "src": "/assets/voice/doubao/949652b0b19f0e41.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择保留观察、暂缓人物行为推断。": {
+    "src": "/assets/voice/doubao/9eb18fa42d594ded.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "东堤风起，远处佛香阁的轮廓浮在树梢上。手札写着：“第四层见真章。”": {
+    "src": "/assets/voice/doubao/27a2e3156c2d0d11.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "等等。我们一路都在追数字，可是“层”和“檐”，真是一回事吗？": {
+    "src": "/assets/voice/doubao/52e8ef246c7e196f.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "如果是熟悉这座建筑的匠人，会把三层写成四层吗？也许是后来的人抄错了，也许这本手札从一开始，就不是我们以为的那种档案。": {
+    "src": "/assets/voice/doubao/5b61f523ad6b0ed5.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我找到一条可核查的官方说明。先把两段话放在一起，再决定哪一句该改。": {
+    "src": "/assets/voice/doubao/1ebcda8e724dcb2a.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在文昌阁附近安全停留，打开佛香阁官方建筑资料，核对“层”和“檐”。 用自己的话写下：手札的说法错在什么地方？": {
+    "src": "/assets/voice/doubao/9a4efd8a7f456f7d.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你获得了“重檐校样”。真正破解的，是一道写错的题。": {
+    "src": "/assets/voice/doubao/a23c0e7e346fded1.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "对照官方建筑介绍，找出手札中混用的概念。": {
+    "src": "/assets/voice/doubao/d62464f9c4441c3b.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "官方说明里同时出现了“三”和“四”。": {
+    "src": "/assets/voice/doubao/098591570eaae63f.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "一个描述楼层，一个描述檐。": {
+    "src": "/assets/voice/doubao/67b52ce6349383b6.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "不是四层楼，而是三层四重檐。": {
+    "src": "/assets/voice/doubao/60e1a777409075ce.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "桥影落进湖里。你把手札翻到最后，那里没有逃亡路线，也没有一个等你揭晓的真名。": {
+    "src": "/assets/voice/doubao/11d6c237bf94ca93.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我一直以为，只要走到终点，就能替那个“失踪的人”找回名字。": {
+    "src": "/assets/voice/doubao/5d49d1656252e589.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我曾把缺失的名字当作一场失踪的证明。可是，空白本身并不是证据。你一路留下的照片与文字，才是今天真正发生过的故事。": {
+    "src": "/assets/voice/doubao/99e7a3052cb10bba.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "可我们找到的，是不同年代的笔迹、被改写的数字，和一个还没有足够证据的传说。也许，真正差点丢失的，是认真看待这座园林的方式。": {
+    "src": "/assets/voice/doubao/62815c5cecc424bd.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在十七孔桥东岸允许停留处回看湖面、桥影和已收集的信物。 写下这次游玩改变了你对园林的哪一种印象。": {
+    "src": "/assets/voice/doubao/b776a98e41804770.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "“桥影留笺”已收好。你走过的这一路，终于有了自己的署名。": {
+    "src": "/assets/voice/doubao/fa5de720cfe4794a.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "把沿途证据归位，为手札选择一种诚实的结尾。": {
+    "src": "/assets/voice/doubao/9e24f188e90d184d.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "这些证据还不能证明“失踪匠人”确有其人。": {
+    "src": "/assets/voice/doubao/c785c8ec5c79f115.mp3",
+    "mood": "mystery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你的选择决定讲述方式，不会改写真实历史。": {
+    "src": "/assets/voice/doubao/93d83d30b3fcf421.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "三个结局都保留事实与想象的边界。": {
+    "src": "/assets/voice/doubao/153e6fa2cbda5aff.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "三种轮廓，藏在同一页手札里。轻触器物，凑齐师父留下的暗语。": {
+    "src": "/assets/voice/doubao/f0a51413ee3373c2.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "答对了！这组陈设寓意“六合太平”。原来师父留下的不是随手画的三个图案，而是一组有文化含义的线索。": {
+    "src": "/assets/voice/doubao/63fd26c262a1ae20.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "第一枚记忆印章到手！手札背面还有一句：“万卷故事藏画中，三人桃园结义情。”下一站，我们去长廊找画！": {
+    "src": "/assets/voice/doubao/b6baef4b9e335637.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "方向接近了，但我们再想想。古人常把器物和动物组合起来表达吉祥愿望。提示里有“六合”两个字。": {
+    "src": "/assets/voice/doubao/1ddd850cddd4269e.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "鹿、鹤、瓶都找齐了。师父为什么把它们放在同一页？": {
+    "src": "/assets/voice/doubao/9f0fb04fb58d44c3.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你读懂的不是一串暗号，而是一座庭院寄托的愿望。把这枚印章收好，师父留下的地图，才刚刚展开。": {
+    "src": "/assets/voice/doubao/ed66d62c989c6c6a.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "线下引导预演：现场拍照为可选；此试片不校验位置。": {
+    "src": "/assets/voice/doubao/5482aff63bb10cf2.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你将手札归为“来源未明”，把可核查的资料、自己的观察与虚构的传说分开保存。那个名字还没有答案，但这座园林被你认真看见。": {
+    "src": "/assets/voice/doubao/e35cb8ba12bc2390.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你没有急着为传说定案，而是留下一份待解清单。下一位旅人可以沿着你的来源继续寻找，让问题成为新的出发。": {
+    "src": "/assets/voice/doubao/49c11e9c85701f61.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "找齐三件器物，读懂它们共同的寓意，这枚记忆印章才会属于你。": {
+    "src": "/assets/voice/doubao/df4e19383b7d1a2f.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "把传说留给故事，\\n把目光留给真实。": {
+    "src": "/assets/voice/doubao/097eb73017143b93.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你决定把这段虚构冒险写成一篇游园故事。让读者知道哪些是想象，也看见你亲自发现的风景。你让一段旅程有了自己的署名。": {
+    "src": "/assets/voice/doubao/4e4f2d6afc4f837c.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "从一页没有署名的纸开始，亲自寻找留下名字的理由。": {
+    "src": "/assets/voice/doubao/c66966a2559c30f9.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "我先问它从哪里来，再分清眼前看见的、自己推断的和故事想象的。漂亮的解释，可以先留着；没有证据，就暂时不把它写成事实。": {
+    "src": "/assets/voice/doubao/c4d0d7ce1b258b96.mp3",
+    "mood": "discovery",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "演示中轻触器物即可调查，无需到场、定位或上传。": {
+    "src": "/assets/voice/doubao/357bc4e3d17ea9f3.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "请先完成本站定位、照片与至少四字的观察记录，再提交判断。": {
+    "src": "/assets/voice/doubao/104da8af3343b3df.mp3",
+    "mood": "companion",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "第一枚印章压在纸上，鹿、鹤与瓶的轮廓背后，浮出一行极细的字：“万卷故事藏画中，三人桃园结义情。”": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/edd8110dc11df3fb.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：师父把一幅画摹在手札里，却用墨遮住了人物和帅旗。像是不希望我们只照抄他的结论。先拂去墨迹，再用自己的眼睛判断。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/f51bf477e53b698c.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "纸页边缘有一道朱红色批注：“密折的下落，就在头顶万卷画中。”这究竟是寻物的暗号，还是一份被人改过的记录？": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/d73f58c1b163c68f.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "红旗之下，朱砂批注与档案里的墨字不是同一只手写的。你第一次意识到：师父留下的不只是一条路线，还有一份等待校正的证词。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/e99d38b7594cb787.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "寻找梁上彩画，用一面红旗辨认师父留下的校样。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/d510031c90b3af13.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "“看似泰山压顶，实则股掌之间。”阿衡把这句话翻来覆去读了两遍，终于把手伸向了远处的佛香阁。": {
+    "mood": "discovery",
+    "src": "/assets/voice/doubao/2878c636a6867e74.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：我一直拿“山有多高”去解它，或许师父想说的是“我们站在哪里”。你来找角度，我替你收好每一张尝试。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/6b0cdb4da2cf2410.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "今天不拆楼阁的秘密，只换一次自己的站位。用一只手掌，托起远处的佛香阁。": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/b558e037f373fb7d.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你改变的不是楼阁，而是看它的方法。手札旁的批注由此变得清晰：“宏伟不是一个数字，真实要从不同角度互相印证。”": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/d5632b141c4ea399.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "尝试三次错位构图，让远处楼阁与近处手掌相遇。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/a568fd8f8e6f2865.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "手札中的山形线压在真实湖山之上，原本零散的楼与水，开始像一张慢慢展开的图纸。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/db02cd370503f958.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：师父写着“舟行湖心，回望万寿，以山楼天际之线，锁东岸镇水之眼”。陆上也能观察，我们不用为了一个角度去冒险。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/db1a1483b6ed184a.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "把楼阁留在山形之上，也给湖水留下呼吸的位置。你不是在复制一张游客照，而是在看见造园者选择的视线。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/f2d11c08035f4632.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "画框对齐的瞬间，一条朱线从山楼落向东岸。手札里的“镇水之眼”，原来仍要由真实的景物来作答。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/814c0ac87c3cdb0b.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "调整取景框，收进湖水、万寿山与佛香阁，读懂图纸上的视线。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/335723e3bbfd51b4.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡把师父草图中的木构舱楼与现场照片放在一起。窗、柱、顶，像是被另一个时代重新写过。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/72c9bc0959d4e6ca.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：我依照笔记做了一张假想图纸。它不是历史复原，也不能替现场作证。真正有意思的是：你能从眼前的船上找出哪些变化？": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/744a8d6b8e3ad689.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "手札夹层露出一张改稿单：“若改其样，须记其因。”有人删掉的，似乎正是这一句。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/fd21812b245665ff.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你没有把“看起来不同”当成造假的证据，而是留下了可核对的三处细节。师父坚持的是改稿必须留下来由；被人抹去的，是记录变化的责任。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/ac758c3e77307a41.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "擦开旧稿与实拍的差异，找出玻璃、雕花和舱楼三处西式特征。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/8f48515f71d36cb9.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "另一条纹路把你引向一页陈设档。龙与凤的位置被涂改过，批红旁却没有留下改动者的姓名。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/ce4240a1e6c200b5.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：师父留下的问题很具体：中间有几尊铜凤？两侧有几尊铜龙？我们先把“在哪里、有几个”记清楚，再去读那些更大的解释。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/71e99765d3f0a042.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "如果一份档案连位置都写得含混，它关于人物与权力的叙述，又有多少值得轻易相信？": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/de42055c4ddc82e0.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "一凤居中，两龙在侧。你校对的是位置与数量；手札中的权力争执属于剧情中的人的解释，不能仅凭陈设就宣判。": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/ac176f20899f46ba.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "观察一凤两龙的陈设，把现场位置放回手札中的三个空位。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/a9d6ed002a33929f.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "三层草图叠在两层实景上，多出的一层像纸上的幽影。阿衡低声问：师父会不会就是因为发现这个，才从档案里消失？": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/b878d5a8742cb81d.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：等等，这是我的猜测。我们真正能确认的，只是图纸与现状不一样。先数清楼层，再把不确定的推断放在旁边。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/25c048b44c9d1d4e.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "残页背面写着：“有时少的不是一层楼，是解释变化的那一行字。”这句话，与乐寿堂那道太平愿望，越来越不像同一场游戏。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/c8b02b2b74e01e31.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你在密笺上圈出缺失的位置。关于权力、银两与改稿的争执，是师父剧情档案中的线索；真实可见的楼层，仍需要和历史材料分开阅读。": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/80146c3506554365.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "比较三层假想草图和两层实景，用现场观察校对重修档案。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/60261a03a153858b.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "无论从图纸还是档案追来，手札里的朱线都在十七孔桥交汇。你第一次能把两边的证物放在同一张纸上。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/e132994df3d12ea1.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：师父说，判断一件事，不要只站在一边。十七个孔，两岸相向而数，最大的中心孔，应该让两边得到同一个序号。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/1c6d76c24a76f6e0.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "找到中心，再看看手札上的“九五”批注。它是这场虚构密折游戏的锁语，我们不把它当成桥梁设计动机的历史定论。": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/ad1fa777ab3b571d.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "九与九，相向而来；中间只算一次，便是十七。A/B 两份互相争执的手稿，终于在同一个中心对齐。锁背面只剩两个字：安澜。": {
+    "mood": "discovery",
+    "src": "/assets/voice/doubao/c5df1597f13f0e25.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "用十七孔的对称关系找中心，分别从两岸核对中心孔的序号。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/b354bc7da8cbd939.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "牛角之间，远处山楼终于与手札里的线相遇。你翻过最后一张残页，那里不是另一个凶手的名字，而是师父的亲笔。": {
+    "mood": "discovery",
+    "src": "/assets/voice/doubao/2664d80f15a38175.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "阿衡：师父的留言在这里。先把这条视线留下，再读三句：“夏禹治河，铁牛传颂，义重安澜。”不是让你证明自己来过，是让这趟旅程有你自己的声音。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/9b4f6dab1339cda4.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "师父写道：“密折里，是篡改档案的证据。我把它交出去了。离开那张案桌，是我自己的选择。别替我编一个死去的结局，替我把这座园林看清。”": {
+    "mood": "mystery",
+    "src": "/assets/voice/doubao/da363293fb6f3035.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "你终于明白，师父留给你的不是一场追凶，而是一次选择：面对矛盾的记录，你是否愿意亲自观察，留下证据，也承认未解之处。": {
+    "mood": "discovery",
+    "src": "/assets/voice/doubao/624be186febbcb85.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "用牛角框住远处山楼，补全三句铭文，把最后一份自己的声音留在旅程里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/4543b22cd435129d.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "站在北如意门外安全区域，观察门额或入口环境。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/0f22593e145e12d2.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在北如意门，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/963c4f149ff99bd7.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "寻找安全观景点，依次观察近处栏檐、中间林木、远处湖山。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/df2268061a00a0b2.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在画中游，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/1bbe5ae03f6725a3.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在长廊开放段挑一个可停留的位置，用柱框或窗景组织画面。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/742c423c453d1603.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在长廊，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/f7bd1a6e1996c938.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "选择玉澜堂或仁寿殿，在允许拍照的公共区域观察构件或殿前陈设。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/ae188c42e758d9bf.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在仁寿殿，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/a28c675e0f6571ca.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在玉澜堂，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/890b3f40e2408f02.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在文昌阁附近安全停留，打开佛香阁官方建筑资料，核对“层”和“檐”。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/c8e5e54180b71058.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在文昌阁附近，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/0d814de1b526a28f.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在十七孔桥东岸允许停留处回看湖面、桥影和已收集的信物。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/9388ac06bdd2dbc7.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  "在十七孔桥东岸，找一个安全可停留的角度。你可以拍照，也可以只记下今天看到的光。那些照片会陪这件信物一起留在图鉴里。": {
+    "mood": "companion",
+    "src": "/assets/voice/doubao/7d3cd1903f7a73fa.mp3",
+    "provider": "doubao-tts-2.0",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  }
+}

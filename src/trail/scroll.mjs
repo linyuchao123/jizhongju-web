@@ -1,0 +1,8 @@
+import {STEPS} from './rules.mjs';
+import {loadPhotos} from '../palace/storage.mjs';
+export async function exportTrailScroll(state){
+ const personal=(await loadPhotos()).filter(p=>p.runId===state.run),c=document.createElement('canvas');c.width=1080;c.height=1800;const x=c.getContext('2d');x.fillStyle='#f1ebda';x.fillRect(0,0,c.width,c.height);x.strokeStyle='#b0aa8b';x.strokeRect(30,30,1020,1740);x.fillStyle='#234b38';x.font='25px serif';x.fillText('迹中局 · 颐和园实地探索',75,105);x.font='bold 66px serif';x.fillText('一园湖山，亲眼为证。',75,215);x.font='30px serif';x.fillText(state.route==='A'?'匠人之骨 · 求真与借景':'案牍之疑 · 放下与守护',75,285);
+ if(personal[0]){const im=new Image();im.src=personal[0].src;await im.decode();const r=Math.min(930/im.width,620/im.height);x.fillStyle='#dfe2d1';x.fillRect(75,340,930,620);x.drawImage(im,75+(930-im.width*r)/2,340+(620-im.height*r)/2,im.width*r,im.height*r)}
+ state.rewards.forEach((id,i)=>{const col=i%4,row=Math.floor(i/4),left=75+col*235,top=1020+row*170;x.strokeStyle='#a54e38';x.lineWidth=3;x.strokeRect(left,top,200,120);x.fillStyle='#a54e38';x.font='23px serif';x.fillText(STEPS.find(s=>s.id===id)?.reward||id,left+10,top+68)});
+ x.fillStyle='#31503d';x.font='29px serif';x.fillText('阿衡：你亲眼找到的，才是这趟旅程的答案。',75,1480);x.font='23px sans-serif';x.fillText(`${personal.length} 张个人照片 · ${state.rewards.length} 件信物 · ${new Date().toLocaleDateString('zh-CN')}`,75,1570);x.font='21px sans-serif';x.fillText('虚构故事体验纪念 / 照片为个人上传 / 记录保存在本机',75,1660);const blob=await new Promise(r=>c.toBlob(r,'image/png'));if(!blob)throw Error('export');const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='迹中局-颐和谜境-我的通关长卷.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
+}
