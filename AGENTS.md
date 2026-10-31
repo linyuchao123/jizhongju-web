@@ -63,3 +63,25 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - User currently requests only the Leshoutang scene for visual/interaction review before continuing remaining chapters. Do not develop subsequent chapters or deploy until the user asks.
 - Dedicated /#leshoutang route and separate local save. Existing /#archive six-act demo remains available.
 - Spreadsheet row 2 is authoritative for this scene, except mandatory GPS/photos are relaxed for demonstration by latest user instruction. Full-screen green/ivory cinematic style and Aheng portrait remain.
+
+## Mobile polish and voice (2026-10-31)
+- Preserve cinematic visual and story. Speed map first meaningful vector display; remove unused worldwide raster and defer scenic roofs to zoom >=13.2. Do not invent measured speedups.
+- Aheng uses young natural female neural recordings with discovery, mystery, companion prosody. Voice defaults on; user mute preference persists; autoplay restrictions require first interaction/replay. Do not claim professional emotional acting.
+- Profile supports authenticated nickname, city, bio, compressed avatar; account profile is cloud data only after deployment/migration. Story/photo progress stays local.
+- Brand header/footer share the same Brand component and local Ma Shan Zheng subset; sans-serif body, brush display headings, red Beijing seal. Avoid changing the immersive layout.
+
+## Account and emotional voice follow-up (2026-10-31)
+- Login must return the same complete profile fields as GET me, including avatar, city and bio. Regression test save -> logout -> login response itself; do not rely only on later refresh.
+- User requests expressive clear young female Aheng voice and permits external TTS. Candidate is Doubao TTS 2.0 Vivi 2.0, pending account and audition. Prefer pre-rendered clips; never expose speech API keys in frontend or claim synthesized speech is a human recording.
+- Strengthen typography across archive, adventure, collection and profile with brush invitations, printed metadata and sans-serif body, while preserving cinematic layouts and shared header/footer brand.
+
+## Full workbook story (latest request, 2026-10-31)
+- User approved continuing beyond Leshoutang. Complete A/B workbook paths in feature/leshoutang-story-preview, local preview only; do not deploy or push.
+- /#leshoutang and /#expedition use the new full story; /#archive retains original cinematic demo. Keep their local saves independent.
+- Full-bleed real photographs, mineral green/ivory, Aheng portrait, narrative reveals and collectible rewards. Optional camera/photos/notes; demonstration never blocks on GPS or uploads and never claims verified visits.
+- Keep map finder separate from mounted puzzle state. Label invented archival drafts and plot motives. Do not infer historical murder or political intent from architectural counts.
+
+## Approved Aheng voice and branch sync (2026-11-01)
+- User approved the three Doubao TTS 2.0 Vivi 2.0 auditions and requested replacement across the full story, including current A/B routes. Use pre-rendered emotional clips with existing mute/replay controls.
+- User explicitly authorizes committing and pushing all current branch changes to origin/feature/leshoutang-story-preview. This supersedes the earlier do-not-push checkpoint. Do not merge into main or deploy this new story without a separate request.
+- Local .env.voice.local and QA audio are ignored; never commit credentials.

@@ -8,13 +8,21 @@ const json=(value,status=200,extra={})=>Response.json(value,{status,headers:{'Ca
 const cookie=(token,age=2592000)=>`__Host-jzj=${token}; Path=/; Max-Age=${age}; HttpOnly; Secure; SameSite=Strict`;
 const readToken=r=>(r.headers.get('cookie')||'').split(';').map(x=>x.trim()).find(x=>x.startsWith('__Host-jzj='))?.slice(11);
 async function userFor(request,db){const token=readToken(request);if(!token||!/^[a-f0-9]{64}$/.test(token))return null;return db.prepare('SELECT users.id, username, nickname FROM sessions JOIN users ON users.id = sessions.user_id WHERE token_hash = ? AND expires_at > ?').bind(await sha(token),Date.now()).first()}
+async function withProfile(user,db){if(!user)return null;const p=await db.prepare('SELECT city,bio,avatar FROM user_profiles WHERE user_id = ?').bind(user.id).first();return {...user,city:p?.city||'',bio:p?.bio||'',avatar:p?.avatar||''}}
 export async function auth(request,env){
  const url=new URL(request.url),path=url.pathname;
  if(!env.DB)return json({error:'账号服务暂时不可用，请稍后重试。'},503);
- if(request.method==='GET'&&path==='/api/account/me')return json({user:await userFor(request,env.DB)});
+ if(request.method==='GET'&&path==='/api/account/me')return json({user:await withProfile(await userFor(request,env.DB),env.DB)});
  if(request.method!=='POST')return json({error:'请求方式不支持'},405);
  if(request.headers.get('origin')!==url.origin)return json({error:'请求来源不匹配，请刷新后重试。'},403);
  if(!request.headers.get('content-type')?.includes('application/json'))return json({error:'请使用 JSON 请求'},415);
+ if(path==='/api/account/profile'){
+ const user=await userFor(request,env.DB);if(!user)return json({error:'请先登录'},401);
+ const raw=await request.text();if(raw.length>220000)return json({error:'头像过大，请换一张图片'},413);let b;try{b=JSON.parse(raw)}catch{return json({error:'格式错误'},400)}
+ if(!b||typeof b.nickname!=='string'||b.nickname.trim().length<1||b.nickname.trim().length>20||typeof b.city!=='string'||b.city.length>30||typeof b.bio!=='string'||b.bio.length>160||typeof b.avatar!=='string'||b.avatar.length>200000||(b.avatar&&!/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(b.avatar)))return json({error:'请检查资料格式：称呼20字以内，简介160字以内。'},400);
+ await env.DB.batch([env.DB.prepare('UPDATE users SET nickname = ? WHERE id = ?').bind(b.nickname.trim(),user.id),env.DB.prepare('INSERT INTO user_profiles(user_id,city,bio,avatar) VALUES(?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET city=excluded.city,bio=excluded.bio,avatar=excluded.avatar').bind(user.id,b.city.trim(),b.bio.trim(),b.avatar)]);
+ return json({user:{...user,nickname:b.nickname.trim(),city:b.city.trim(),bio:b.bio.trim(),avatar:b.avatar}});
+ }
  if(path==='/api/account/logout'){const token=readToken(request);if(token)await env.DB.prepare('DELETE FROM sessions WHERE token_hash = ?').bind(await sha(token)).run();return json({ok:true},200,{'Set-Cookie':cookie('',0)})}
  if(!['/api/account/login','/api/account/register'].includes(path))return json({error:'接口不存在'},404);
  if(Number(request.headers.get('content-length')||0)>4096)return json({error:'请求过大'},413);
@@ -30,6 +38,7 @@ export async function auth(request,env){
  let user;
  if(path.endsWith('register')){const id=crypto.randomUUID(),salt=random(16),hash=await passwordHash(password,salt);try{await env.DB.prepare('INSERT INTO users(id,username,nickname,password_hash,salt,created_at) VALUES(?,?,?,?,?,?)').bind(id,username,nickname,hash,salt,now).run()}catch(e){if(String(e).includes('UNIQUE'))return json({error:'这个账号已被使用，请换一个或直接登录。'},409);throw e}user={id,username,nickname};}
  else{const stored=await env.DB.prepare('SELECT * FROM users WHERE username = ?').bind(username).first();const hash=await passwordHash(password,stored?.salt||'missing-user-dummy-salt');let diff=0;const expected=stored?.password_hash||'0'.repeat(64);for(let i=0;i<64;i++)diff|=hash.charCodeAt(i)^expected.charCodeAt(i);if(!stored||diff)return json({error:'账号或密码不正确。'},401);user={id:stored.id,username:stored.username,nickname:stored.nickname};}
+ user=await withProfile(user,env.DB);
  const token=random(32);await env.DB.prepare('INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,?)').bind(await sha(token),user.id,now+2592000000).run();
  await env.DB.batch([env.DB.prepare('DELETE FROM sessions WHERE expires_at < ?').bind(now),env.DB.prepare('DELETE FROM auth_limits WHERE window_end < ?').bind(now)]);
  return json({user},200,{'Set-Cookie':cookie(token)});

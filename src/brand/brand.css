@@ -1,0 +1,38 @@
+@font-face{font-family:BeijingBrush;src:url('/assets/fonts/beijing-brush.ttf') format('truetype');font-display:swap}.jzj-brand{display:inline-flex;flex-direction:column;gap:7px;color:#214b3d}.jzj-wordmark{display:flex;align-items:center;font-family:BeijingBrush,'STXingkai','Kaiti SC',serif;font-size:49px;line-height:1.1;letter-spacing:1px;white-space:nowrap;font-weight:400}.jzj-wordmark>span:first-child{transform:rotate(-8deg);display:inline-block}.jzj-wordmark>span:nth-child(3){transform:rotate(4deg);display:inline-block}.jzj-wordmark i{font:13px/1.1 sans-serif;writing-mode:vertical-rl;letter-spacing:2px;background:#b74831;color:#fff5df;padding:6px 4px;margin-left:8px;border-radius:2px;align-self:flex-start;margin-top:4px}.jzj-brand>small{font:8px/1.5 sans-serif!important;letter-spacing:4px!important;color:#4c6a59}.footer-brand .jzj-brand{margin-bottom:12px}.footer-brand .jzj-wordmark{font-size:49px}.header .brand{display:flex}.avatar{overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}body,button,input,textarea,select{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}.hero-title,.palace-feature-title h2,.palace-chapter-heading h1,.palace-reward>h2,.palace-ending h2,.palace-collection-heading h1{font-family:BeijingBrush,'STSong',serif!important;font-weight:400}.palace-dialogue-body>p{font-family:'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.5px}.passport-label:before{content:'京';display:inline-block;background:#b74831;color:#fff8e9;padding:5px;margin-right:9px}.atlas-loading{pointer-events:none;padding:10px 16px!important;box-shadow:none!important;left:20px!important;right:auto!important;top:auto!important;bottom:95px!important;transform:none!important;max-width:270px!important}.atlas-loading strong{font-size:13px!important}.atlas-loading p{font-size:10px!important}@media(max-width:759px){.jzj-wordmark,.footer-brand .jzj-wordmark{font-size:39px}.jzj-brand>small{font-size:7px!important;letter-spacing:2.6px!important}.palace-chapter-heading h1{letter-spacing:2px}.atlas-loading{bottom:92px!important;max-width:240px!important}}
+.brand .jzj-wordmark,footer .footer-brand .jzj-wordmark{font-family:BeijingBrush,'STXingkai','Kaiti SC',serif;font-size:49px;line-height:1.1;color:#214b3d;font-weight:400}footer .footer-brand .jzj-wordmark>span{font:inherit;color:inherit}.brand .jzj-brand,footer .footer-brand .jzj-brand{display:inline-flex;flex-direction:column;gap:7px}.brand .jzj-brand>small,footer .footer-brand .jzj-brand>small{margin-top:0;color:#4c6a59;font-family:sans-serif}@media(max-width:759px){.brand .jzj-wordmark,footer .footer-brand .jzj-wordmark{font-size:39px}}
+
+/* A city journal: brush invitations, printed archive labels, readable dialogue. */
+.page-intro h1{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-weight:500;letter-spacing:-1.5px}
+.page-intro h1 em{font-family:BeijingBrush,'STSong',serif;font-size:1.14em;font-weight:400;display:inline-block;transform:rotate(-2deg);letter-spacing:1px}
+.cover-content h2,.mystery .cover-content h2,.adventure-empty h1,.adventure-card h2,.palace-adventure-copy h2,.palace-item-caption h2,.page-profile .section-heading h2,.page-profile .memory-card h3,.profile-edit h3,.account-art h2{font-family:BeijingBrush,'STSong',serif;font-weight:400;letter-spacing:2px}
+.invitation h3,.intro-note p{font-family:BeijingBrush,'STSong',serif;font-weight:400;letter-spacing:1px}
+.intro-note p{font-size:18px;line-height:1.7;transform:rotate(-2deg)}
+.genre{font-family:'PingFang SC',sans-serif;font-weight:600;letter-spacing:2px;border-radius:0;border-width:1px 0;padding:5px 1px}
+.eyebrow,.passport-label,.palace-overline{font-family:'Courier New','PingFang SC',monospace;font-weight:500;letter-spacing:2px}
+.profile-stats strong,.palace-ending-stats strong{font-family:'Courier New',monospace;font-weight:400;font-variant-numeric:tabular-nums;letter-spacing:-3px}
+.passport-person h2{font-family:'PingFang SC',sans-serif;font-weight:600;letter-spacing:-1px}
+.account-passport{position:relative;background-color:#f2f0e1;background-image:linear-gradient(90deg,transparent 97%,#234d3d06 97%);background-size:24px 100%}
+.passport-label{display:flex;align-items:center;flex-wrap:wrap;gap:4px;font-size:10px}
+.passport-label:before{font-family:BeijingBrush,serif;font-size:17px;transform:rotate(-5deg);border:1px solid #f4ecdb;outline:1px solid #b74831;outline-offset:2px}
+.profile-edit h3{font-size:27px;margin-bottom:18px}
+.profile-edit input,.profile-edit textarea{background:#fffdf6;border-color:#c6ccb8;border-radius:3px}
+.atlas-city-label strong,.atlas-intro h1{font-family:BeijingBrush,'STSong',serif;font-weight:400}
+@media(max-width:759px){
+ .page-intro h1{font-size:clamp(25px,7.6vw,39px);letter-spacing:-1px;line-height:1.6}
+ .page-intro h1 em{font-size:1.1em;transform:none}
+ .cover-content h2,.mystery .cover-content h2{font-size:32px}
+ .passport-person h2{font-size:clamp(20px,5.8vw,26px);line-height:1.4}
+ .passport-label{letter-spacing:1px;font-size:9px}
+ .profile-edit h3{font-size:26px}
+ .palace-collection-heading h1{font-size:clamp(28px,8vw,40px);line-height:1.4}
+ .palace-collection{padding:30px 22px}
+ .palace-collection .palace-collection-heading{display:block!important;width:100%}
+ .palace-collection-heading>div:first-child{width:100%;min-width:0}
+ .palace-collection-heading h1{letter-spacing:0}
+ .palace-inventory-count{display:flex;align-items:baseline;gap:8px;text-align:left;padding:8px 0 0;white-space:normal}
+ .palace-inventory-count b{font:32px/1.2 'Courier New',monospace}
+ .palace-inventory-count small{margin:0 0 0 auto}
+ .palace-collection-tabs{justify-content:space-between;gap:8px}
+ .palace-collection-tabs button{white-space:nowrap;gap:4px;font-size:10px}
+ .palace-collection-tabs button>svg{width:14px;flex-shrink:0}
+}

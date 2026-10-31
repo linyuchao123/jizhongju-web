@@ -5,7 +5,7 @@ import { towerMassing } from './landmarks.mjs';
 import { POIS, collection, point } from './geo.mjs';
 export function createExplorerStyle(){
  const s=structuredClone(baseStyle);
- s.name='迹中局 · 山河探索';
+ s.name='迹中局 · 山河探索';delete s.sources.ne2_shaded;delete s.sprite;s.layers=s.layers.filter(l=>l.source!=='ne2_shaded');for(const l of s.layers){if(l.layout){delete l.layout['icon-image'];delete l.layout['icon-size'];delete l.layout['icon-optional']}}
  s.projection={type:'globe'};
  s.light={anchor:'map',color:'#fffaf0',intensity:0.42,position:[1.5,225,45]};
  s.sky={'sky-color':'#e5eadc','horizon-color':'#e5eadc','fog-color':'#e5eadc','fog-ground-blend':1,'horizon-fog-blend':0,'sky-horizon-blend':0,'atmosphere-blend':0};
