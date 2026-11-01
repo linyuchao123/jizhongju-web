@@ -5,3 +5,9 @@
 - 本地浏览器从开局走到提问页，确认播放器进入播放状态，无控制台错误。新增MP3经afinfo解码：7.632秒、24kHz、64kbps。
 - 顶栏头像去掉默认button内边距，图片绝对定位填满圆框。390px测试夹具使用公开非方形角色图，按钮29×29，图片29×29，边界完全重合。截图qa/avatar-fix-mobile.png；未修改用户头像文件。
 - main代码已提交；Cloudflare发布因OAuth会话失效失败。恢复登录中，尚不能声称本补丁已上线。用户完成设备确认后继续wrangler deploy并核对新音频与CSS。
+
+## 授权恢复后发布完成
+- 用户完成Wrangler设备授权，CLI确认Successfully logged in。
+- Cloudflare版本4658de50-7569-45b8-bbe7-4de064f29b5b已部署到jizhongju.xiaolinyx.me。
+- 正式站首页200，引用index-C8fwryWT.js / index-x22XTpiF.css；线上CSS确认含头像绝对填充修复。
+- 新增解谜页配音3651c1848c469d39.mp3随本次发布上传成功。
