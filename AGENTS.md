@@ -91,3 +91,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Preserve original six-act experience as 颐和谜境（1） and workbook A/B story as 颐和谜境（2）. Both appear in archives, adventures and the collection version picker.
 - Stable identities palace-1 / palace-2, existing save keys remain unchanged. Photos with no storyId and no expedition flag are first-edition legacy photos; expedition=true legacy photos belong to edition 2. Scoped reset must not delete another edition's photos.
 - Both editions use the already-approved Volcengine/Doubao TTS recordings in voice-clips.json. Keep credentials out of frontend assets and Git.
+
+## Second edition prologue (2026-11-02)
+- User requests a polished fictional background: master disappears with completion memorial before a ceremony; half a notebook leads from North Ruyi Gate to Leshoutang. A/B endings remain intact.
+- Map entry includes a concise premise and opens edition 2; edition 2 shows an immersive green/ivory prologue before NPC dialogue. Preserve all existing saves and edition 1. Narrative sunset is not a real countdown; no new GPS/photo gate. User authorizes production deployment.

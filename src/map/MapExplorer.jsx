@@ -1,3 +1,4 @@
+import '../expedition/prologue.css';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import maplibregl from 'maplibre-gl';
 import workerURL from 'maplibre-gl/dist/maplibre-gl-csp-worker.js?url';
@@ -164,7 +165,7 @@ export default function MapExplorer({onArchive,onStory,initialPoiId,notify,minim
  const cancelGeo=()=>{requestId.current++;setGeoStatus('idle');setGeoMessage('')};
  const busy=status==='loading'||status==='slow';
  return <section className={`atlas-explorer ${minimal?'atlas-minimal':''} ${finderTarget?'atlas-finder':''}`} ref={shell} data-map-status={status} data-level={level} aria-label="城市动态探索地图">
-  {minimal&&<button className="atlas-start-story" onClick={()=>callbacks.current.onStory?.()}>颐和谜境 · 开始实地故事<ArrowRight size={18}/></button>}
+  {minimal&&<section className="atlas-story-invitation" aria-label="颐和谜境故事背景"><small>颐和谜境（2） · 日落之前</small><h2>师父失踪了。<br/>半本手札，是唯一的线索。</h2><p>竣工大典将至，《竣工密折》却随师父一同消失。从北如意门入园，循建筑暗语寻回密折，揭开他离开的真相。</p><button onClick={()=>callbacks.current.onStory?.('second')}>颐和谜境 · 开始实地故事<ArrowRight size={18}/></button><span>真实园林 · 虚构悬疑剧情</span></section>}
   <div ref={container} className="atlas-canvas" role="region" aria-label="可拖动、缩放和旋转的真实地图"/>
   <div className="atlas-topbar"><div className="atlas-breadcrumb" aria-label="地图层级">{LEVELS.map((l,i)=><React.Fragment key={l.id}>{i>0&&<CaretRight size={12}/>}<button className={level===l.id?'current':''} onClick={()=>flyTo(l.id,{duration:i===2?3700:2500})}>{i===0&&<GlobeHemisphereEast size={16}/>}<span>{l.title}</span>{l.id==='beijing'&&<small>直辖市</small>}</button></React.Fragment>)}</div><div className={`atlas-status ${status}`}><span/>{status==='ready'?'探索地图已就绪':status==='partial'?'部分地图连接较慢':status==='error'?'渲染异常':'正在展开山河'}{status==='partial'&&<button onClick={()=>setRetry(r=>r+1)} aria-label="重新加载底图"><ArrowCounterClockwise size={12}/></button>}</div></div>
   {(level==='china'||level==='beijing')&&!selected&&<section className="atlas-mobile-intro"><span>文化体验游戏 / CITY AS A STORY</span><h1>把一座城，玩成一个故事。</h1><p>选城市 · 解线索 · 留下你的旅行记忆<br/>首发北京颐和园，更多城市筹备中。</p><div><button onClick={()=>callbacks.current.onStory?.('preview')}><BookOpen size={16}/>线上沉浸入局</button><button onClick={()=>callbacks.current.onStory?.('field')}><MapPin size={16}/>线下实地探索</button></div></section>}

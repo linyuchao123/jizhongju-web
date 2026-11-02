@@ -6,17 +6,20 @@ import {useNarration,VoiceControls} from '../palace/Voice.jsx';
 import {preparePhoto,putPhoto,loadPhotos} from '../palace/storage.mjs';
 import {CHAPTERS,PATHS,ART,KEY,START_KEY,fresh,restore,beginRoute,complete,advance,rewardFor} from './story.mjs';
 import photos from './photos.json';import Puzzles from './Puzzles.jsx';import './expedition.css';
+import StoryPrologue from './StoryPrologue.jsx';
 const Finder=lazy(()=>import('../map/MapExplorer.jsx'));
 export default function Expedition(){
+ const [prologue,showPrologue]=useState(true);
  const [s,S]=useState(()=>restore(localStorage.getItem(KEY))),[drawer,D]=useState(null),[hint,H]=useState(false),[notice,N]=useState(''),[memories,M]=useState([]),[reset,R]=useState(false);const file=useRef();
  useEffect(()=>{localStorage.setItem(KEY,JSON.stringify(s))},[s]);
  useEffect(()=>{window.scrollTo({top:0,behavior:'instant'})},[s.chapter,s.phase]);
  useEffect(()=>{loadPhotos(STORY_TWO).then(M).catch(()=>N('相册暂时无法读取，故事仍可继续。'))},[]);
  const c=CHAPTERS[s.chapter],line=c?(s.phase==='dialogue'?c.lines[s.beat]:s.phase==='reward'?c.after:c.purpose):'';
- const voice=useNarration({text:line,speaker:'阿衡',scene:s.chapter+s.phase+s.beat});
+ const voice=useNarration({text:prologue?'':line,speaker:'阿衡',scene:s.chapter+s.phase+s.beat});
  function finish(proof){const next=complete(s,proof);if(next===s)return false;S(next);return true}
  async function upload(e){const f=e.target.files?.[0];e.target.value='';if(!f)return;try{const photo=await preparePhoto(f,{expedition:true,storyId:STORY_TWO,runId:s.runId,chapter:c.id,place:c.place,mode:s.mode,caption:s.notes[c.id]||''});await putPhoto(photo);M(await loadPhotos(STORY_TWO));N('这一刻已收进本机相册。演示记录不计作已核验到访。')}catch(e){N(e.message||'照片保存失败，请重试。')}}
- function restart(){localStorage.removeItem(START_KEY);S({...fresh(),history:s.history,bookmarked:!!s.bookmarked});R(false);D(null);H(false)}
+ function restart(){localStorage.removeItem(START_KEY);S({...fresh(),history:s.history,bookmarked:!!s.bookmarked});R(false);D(null);H(false);showPrologue(true)}
+ if(prologue)return <StoryPrologue continuing={s.chapter!=='start'||!!localStorage.getItem(START_KEY)} onEnter={()=>showPrologue(false)}/>;
  if(!c)return <Leshoutang storageKey={START_KEY} onRoute={(route,mode)=>S(beginRoute(s,route,mode))}/>;
  const path=PATHS[s.route],index=path.indexOf(c.id),source=photos[c.scene],ownPhotos=memories.filter(p=>p.runId===s.runId);
  return <main className={'ex-game ex-phase-'+s.phase}>
