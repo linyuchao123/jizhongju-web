@@ -1,0 +1,86 @@
+{
+  "screenshots": [
+    {
+      "file": "screenshots/01-world-map.webp",
+      "original": "codex-clipboard-f8f9c97f-0c6c-4d19-a570-7d501dd0c31d.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/02-story-archive.webp",
+      "original": "codex-clipboard-f601434d-902d-40b3-9214-548803449fb1.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/03-edition-one-dialogue.webp",
+      "original": "codex-clipboard-f1210065-97bc-4530-9aea-cf92996067fe.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/04-journal-reward.webp",
+      "original": "codex-clipboard-3a8d9704-ed4d-4185-8b25-d7bc33f8ac29.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/05-edition-two-prologue.webp",
+      "original": "codex-clipboard-0068f9d8-86bb-4ecc-8387-cf438724cbaa.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/06-leshoutang-investigation.webp",
+      "original": "codex-clipboard-e155a511-65e3-4ebe-941e-f5a5d3170e3b.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/07-taiping-seal.webp",
+      "original": "codex-clipboard-e22d2f04-c9d6-4824-a130-d02efb3cfa10.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/08-corridor-dialogue.webp",
+      "original": "codex-clipboard-c525b9ff-09d8-498a-86b3-8e74584d8134.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/09-story-catalogue.webp",
+      "original": "codex-clipboard-75a1dac4-11a4-46de-b0f1-931116d95e37.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/10-adventure-progress.webp",
+      "original": "codex-clipboard-358d2efe-0b43-497c-8286-a516313a0bb9.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/11-collection-editions.webp",
+      "original": "codex-clipboard-9b5466c8-c86e-4ccf-b808-3ed583f73575.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/12-collectible-cards.webp",
+      "original": "codex-clipboard-8f657b10-ae8a-4561-978f-5ea3b7a92339.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/13-explorer-profile.webp",
+      "original": "codex-clipboard-47ce888b-6243-4f7c-b2b7-6d1e48fd917c.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    },
+    {
+      "file": "screenshots/16-repository-about.webp",
+      "original": "codex-clipboard-e0b35580-7393-4f98-bc96-39ce78519689.png",
+      "treatment": "等比缩至最长宽1920px，WebP质量88，无裁剪"
+    }
+  ],
+  "poster": "用户提供的团队海报原图",
+  "qr": "用户提供的在线体验二维码原图",
+  "videos": [
+    {
+      "file": "../../public/showcase/web-demo.mp4",
+      "original": "录屏2026-10-31 16.28.28.mov"
+    },
+    {
+      "file": "../../public/showcase/mobile-demo.mp4",
+      "original": "录屏2026-10-31 17.18.58.mov"
+    }
+  ]
+}
