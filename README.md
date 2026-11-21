@@ -1,3 +1,5 @@
+![迹中局项目封面：让探索有故事，让好奇有回应](docs/media/project-cover.png)
+
 <div align="center">
 
 <img src="public/apple-touch-icon.png" width="88" alt="迹中局品牌图标" />
